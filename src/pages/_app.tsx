@@ -1,13 +1,25 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
+
+const theme = createMuiTheme({
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        p: {
+          margin: 0,
+        },
+      },
+    },
+  },
+});
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
-    <React.Fragment>
+    <ThemeProvider theme={theme}>
       <CssBaseline/>
       <Component {...pageProps}/>
-    </React.Fragment>
+    </ThemeProvider>
   );
 };
 
