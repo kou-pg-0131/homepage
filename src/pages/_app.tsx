@@ -6,6 +6,9 @@ const theme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       '@global': {
+        body: {
+          fontFamily: 'Raleway, sans-serif'
+        },
         p: {
           margin: 0,
         },
