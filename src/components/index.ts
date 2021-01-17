@@ -1,3 +1,3 @@
 export * from './section';
-export * from './skills/index';
-export * from './user/index';
+export * from './skills';
+export * from './user';

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { SkillCardList } from './skillCardList/index';
+import { SkillCardList } from './skillCardList';
 import { Skill } from '../../lib/skills';
 
 type Props = {
