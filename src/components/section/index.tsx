@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './section.module.scss';
+import styles from './index.module.scss';
 import { Container } from '@material-ui/core';
 
 type Props = {
