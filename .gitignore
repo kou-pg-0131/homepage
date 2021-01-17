@@ -4,10 +4,6 @@
 # next.js
 /.next
 
-# serverless
-/.serverless
-/.serverless_nextjs
-
 # terraform
 **/.terraform/*
 *.tfstate
