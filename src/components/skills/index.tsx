@@ -5,17 +5,18 @@ import { Skill } from '../../lib/skills';
 
 type Props = {
   skills: {
-    [category:string]: Skill[];
-  };
+    category: string;
+    items: Skill[];
+  }[];
 };
 
 export const Skills: React.FC<Props> = (props: Props) => {
   return (
     <div>
-      {Object.entries(props.skills).map(([category, skills]) => (
-        <React.Fragment key={category}>
-          <h3 className={styles.category}>{category}</h3>
-          <SkillCardList items={skills}/>
+      {props.skills.map(item => (
+        <React.Fragment key={item.category}>
+          <h3 className={styles.category}>{item.category}</h3>
+          <SkillCardList items={item.items}/>
         </React.Fragment>
       ))}
     </div>

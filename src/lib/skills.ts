@@ -8,8 +8,9 @@ export type Skill = {
 };
 
 export const getSkills = (): {
-  [category:string]: Skill[];
-} => {
+  category: string;
+  items: Skill[];
+}[] => {
   const body = fs.readFileSync('./src/config.yml');
   const config = yaml.load(body);
   return config.skills;

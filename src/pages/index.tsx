@@ -19,8 +19,9 @@ const socials = [
 
 type Props = {
   skills: {
-    [category:string]: Skill[];
-  };
+    category: string;
+    items: Skill[];
+  }[];
 };
 
 const Home: React.FC<Props> = (props: Props) => {
