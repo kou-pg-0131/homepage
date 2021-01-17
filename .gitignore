@@ -7,3 +7,9 @@
 # serverless
 /.serverless
 /.serverless_nextjs
+
+# terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
