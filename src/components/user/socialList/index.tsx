@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './socialList.module.scss';
+import styles from './index.module.scss';
 
 type Props = {
   items: {

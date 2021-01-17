@@ -11,9 +11,9 @@ type Props = {
 
 export const User: React.FC<Props> = (props: Props) => {
   return (
-    <React.Fragment>
+    <div>
       <About/>
       <SocialList items={props.socials}/>
-    </React.Fragment>
+    </div>
   );
 };
