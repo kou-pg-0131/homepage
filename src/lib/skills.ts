@@ -8,12 +8,7 @@ export type Skill = {
 };
 
 export const getSkills = (): {
-  languages: Skill[];
-  frameworks: Skill[];
-  rdb_nosql: Skill[];
-  ci_cd: Skill[];
-  other: Skill[];
-
+  [category:string]: Skill[];
 } => {
   const body = fs.readFileSync('./src/config.yml');
   const config = yaml.load(body);

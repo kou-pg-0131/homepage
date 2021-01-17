@@ -19,11 +19,7 @@ const socials = [
 
 type Props = {
   skills: {
-    languages: Skill[];
-    frameworks: Skill[];
-    rdb_nosql: Skill[];
-    ci_cd: Skill[];
-    other: Skill[];
+    [category:string]: Skill[];
   };
 };
 
