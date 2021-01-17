@@ -9,6 +9,10 @@ const theme = createMuiTheme({
         body: {
           fontFamily: 'Raleway, sans-serif',
         },
+        a: {
+          color: '#000',
+          textDecoration: 'none',
+        },
         p: {
           margin: 0,
         },
