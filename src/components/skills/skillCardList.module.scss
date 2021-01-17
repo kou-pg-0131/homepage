@@ -1,0 +1,29 @@
+.skillCardList {
+  &__itemContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px 0 #ddd;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    transition: 0.3s;
+    width: 150px;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  &__itemImg {
+    margin-bottom: 8px;
+    width: 80px;
+  }
+}

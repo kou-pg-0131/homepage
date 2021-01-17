@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../layout';
-import { About, SocialList } from '../components';
+import { About, SocialList, Section, Skills } from '../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
@@ -15,13 +15,57 @@ const socialItems = [
   },
 ];
 
+const skills = {
+  languages: [
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+    {
+      name: 'Ruby',
+      imgSrc: '/images/ruby.svg',
+      href: 'https://example.com',
+    },
+  ],
+};
+
 const Home: React.FC = () => {
   return (
     <Layout>
-      <section>
+      <Section>
         <About/>
         <SocialList items={socialItems}/>
-      </section>
+      </Section>
+
+      <Section title='Skills'>
+        <Skills items={skills}/>
+      </Section>
     </Layout>
   );
 };
