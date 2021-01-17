@@ -20,9 +20,6 @@ const Home: React.FC = () => {
     <Layout>
       <section>
         <About/>
-      </section>
-
-      <section>
         <SocialList items={socialItems}/>
       </section>
     </Layout>
