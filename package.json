@@ -4,7 +4,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
-    "lint": "eslint './**/*.ts' './**/*.tsx'"
+    "lint": "eslint './**/*.ts' './**/*.tsx'",
+    "test:compile": "tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
