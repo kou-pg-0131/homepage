@@ -1,22 +1,27 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { SkillCardList } from './skillCardList/index';
-
-type Item = {
-  name: string;
-  href: string;
-  imgSrc: string;
-};
+import { Skill } from '../../lib/skills';
 
 type Props = {
-  languages: Item[];
+  skills: {
+    languages: Skill[];
+    frameworks: Skill[];
+    rdb_nosql: Skill[];
+    ci_cd: Skill[];
+    other: Skill[];
+  };
 };
 
 export const Skills: React.FC<Props> = (props: Props) => {
   return (
     <div className={styles.skills}>
-      <h3 className={styles.skills__category}>Languages</h3>
-      <SkillCardList items={props.languages}/>
+      {Object.entries(props.skills).map(([category, skills]) => (
+        <React.Fragment key={category}>
+          <h3 className={styles.skills__category}>{category}</h3>
+          <SkillCardList items={skills}/>
+        </React.Fragment>
+      ))}
     </div>
   );
 };

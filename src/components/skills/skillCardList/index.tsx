@@ -14,7 +14,7 @@ export const SkillCardList: React.FC<Props> = (props: Props) => {
   return (
     <Grid className={styles.skillCardList} container spacing={2}>
       {props.items.map(item => (
-        <Grid key={item.name} item className={styles.skillCardList__itemContainer} xs={3}>
+        <Grid key={item.name} item className={styles.skillCardList__itemContainer} xs={6} sm={4} md={3}>
           <a className={styles.skillCardList__itemLink} href={item.href} target='_blank' rel='noreferrer noopener'>
             <div className={styles.skillCardList__item}>
               <img className={styles.skillCardList__itemImg} src={item.imgSrc} alt={item.name}/>

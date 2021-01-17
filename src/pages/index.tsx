@@ -1,8 +1,10 @@
 import React from 'react';
-import Layout from '../layout';
+import { GetStaticProps } from 'next';
+import { Layout } from '../layout';
 import { Section, Skills, User } from '../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { Skill, getSkills } from '../lib/skills';
 
 const socials = [
   {
@@ -15,42 +17,17 @@ const socials = [
   },
 ];
 
-const skills = {
-  languages: [
-    {
-      name: 'Go',
-      imgSrc: '/images/skills/go.svg',
-      href: 'https://golang.org',
-    },
-    {
-      name: 'Ruby',
-      imgSrc: '/images/skills/ruby.svg',
-      href: 'https://www.ruby-lang.org/ja/',
-    },
-    {
-      name: 'TypeScript',
-      imgSrc: '/images/skills/typescript.svg',
-      href: 'https://www.typescriptlang.org/',
-    },
-    {
-      name: 'JavaScript',
-      imgSrc: '/images/skills/javascript.svg',
-      href: 'https://developer.mozilla.org/ja/docs/Web/JavaScript',
-    },
-    {
-      name: 'HTML',
-      imgSrc: '/images/skills/html.svg',
-      href: 'https://developer.mozilla.org/ja/docs/Web/HTML',
-    },
-    {
-      name: 'CSS',
-      imgSrc: '/images/skills/css.svg',
-      href: 'https://developer.mozilla.org/ja/docs/Web/CSS',
-    },
-  ],
+type Props = {
+  skills: {
+    languages: Skill[];
+    frameworks: Skill[];
+    rdb_nosql: Skill[];
+    ci_cd: Skill[];
+    other: Skill[];
+  };
 };
 
-const Home: React.FC = () => {
+const Home: React.FC<Props> = (props: Props) => {
   return (
     <Layout>
       <Section>
@@ -58,10 +35,20 @@ const Home: React.FC = () => {
       </Section>
 
       <Section title='Skills'>
-        <Skills languages={skills.languages}/>
+        <Skills skills={props.skills}/>
       </Section>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const skills = getSkills();
+
+  return {
+    props: {
+      skills,
+    },
+  };
 };
 
 export default Home;
