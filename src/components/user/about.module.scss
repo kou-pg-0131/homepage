@@ -1,17 +1,17 @@
-.about {
+.root {
   font-size: 22px;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
 
-  &__user {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 6px;
-  }
+.user {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
 
-  &__tagline {
-    color: #aaa;
-  }
+.tagline {
+  color: #aaa;
 }

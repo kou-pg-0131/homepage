@@ -10,10 +10,10 @@ type Props = {
 
 export const SocialList: React.FC<Props> = (props: Props) => {
   return (
-    <ul className={styles.socials}>
+    <ul className={styles.root}>
       {props.items.map(item => (
-        <li key={item.href} className={styles.socials__item}>
-          <a className={styles.socials__itemLink} href={item.href} target='_blank' rel='noopener noreferrer'>
+        <li key={item.href} className={styles.item}>
+          <a className={styles.itemLink} href={item.href} target='_blank' rel='noopener noreferrer'>
             {item.icon}
           </a>
         </li>

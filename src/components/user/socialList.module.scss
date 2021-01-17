@@ -1,20 +1,20 @@
-.socials {
+.root {
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
 
-  &__item {
-    font-size: 50px;
-    margin: 8px;
-  }
+.item {
+  font-size: 50px;
+  margin: 8px;
+}
 
-  &__itemLink {
-    color: #000;
-    transition: 0.2s;
-    &:hover {
-      color: #0a59b0;
-    }
+.itemLink {
+  color: #000;
+  transition: 0.2s;
+  &:hover {
+    color: #0a59b0;
   }
 }

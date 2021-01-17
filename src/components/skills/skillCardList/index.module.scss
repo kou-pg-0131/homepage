@@ -1,39 +1,37 @@
-.skillCardList {
-  &__itemContainer {
-    display: flex;
-    justify-content: center;
-  }
+.itemContainer {
+  display: flex;
+  justify-content: center;
+}
 
-  &__itemLink {
-    color: #000;
-    text-decoration: none;
-  }
+.itemLink {
+  color: #000;
+  text-decoration: none;
+}
 
-  &__item {
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 0 3px 3px 0 #ddd;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    transition: 0.3s;
-    width: 150px;
+.item {
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 3px 3px 0 #ddd;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  transition: 0.3s;
+  width: 100%;
 
-    &:hover {
-      transform: translateY(-4px);
-    }
+  &:hover {
+    transform: translateY(-4px);
   }
+}
 
-  &__itemImg {
-    margin-bottom: 8px;
-    width: 80px;
-    height: 80px;
-  }
+.itemImg {
+  margin-bottom: 8px;
+  width: 80px;
+  height: 80px;
+}
 
-  &__itemName {
-    font-weight: bold;
-  }
+.itemName {
+  font-weight: bold;
 }
