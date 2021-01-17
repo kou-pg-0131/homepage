@@ -21,6 +21,8 @@ skills:
     - name: CSS
       imgSrc: /images/skills/css.svg
       href: 
+    - name: Sass
+      imgSrc: /images/skills/sass.svg
   Frameworks:
     - name: Gin
       imgSrc: /images/skills/gin.svg
