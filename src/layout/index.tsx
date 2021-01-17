@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Layout: React.FC<Props> = (props: Props) => {
+export const Layout: React.FC<Props> = (props: Props) => {
   return (
     <React.Fragment>
       <Head>
@@ -17,5 +17,3 @@ const Layout: React.FC<Props> = (props: Props) => {
     </React.Fragment>
   );
 };
-
-export default Layout;
