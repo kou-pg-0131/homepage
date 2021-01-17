@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../layout';
-import { About, SocialList, Section, Skills } from '../components';
+import { Section, Skills, User } from '../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
-const socialItems = [
+const socials = [
   {
     href: 'https://github.com/kou-pg-0131',
     icon: <FontAwesomeIcon icon={faGithubSquare}/>,
@@ -59,8 +59,7 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <Section>
-        <About/>
-        <SocialList items={socialItems}/>
+        <User socials={socials}/>
       </Section>
 
       <Section title='Skills'>
