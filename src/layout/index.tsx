@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 type Props = {
   children: React.ReactNode;
@@ -8,9 +7,6 @@ type Props = {
 const Layout: React.FC<Props> = (props) => {
   return (
     <div>
-      <Head>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
       {props.children}
     </div>
   );
