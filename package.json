@@ -3,7 +3,8 @@
   "author": "kou-pg-0131 <kou.pg.0131@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint": "eslint './**/*.ts' './**/*.tsx'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
