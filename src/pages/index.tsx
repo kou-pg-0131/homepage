@@ -18,39 +18,34 @@ const socials = [
 const skills = {
   languages: [
     {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      name: 'Go',
+      imgSrc: '/images/skills/go.svg',
+      href: 'https://golang.org',
     },
     {
       name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      imgSrc: '/images/skills/ruby.svg',
+      href: 'https://www.ruby-lang.org/ja/',
     },
     {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      name: 'TypeScript',
+      imgSrc: '/images/skills/typescript.svg',
+      href: 'https://www.typescriptlang.org/',
     },
     {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      name: 'JavaScript',
+      imgSrc: '/images/skills/javascript.svg',
+      href: 'https://developer.mozilla.org/ja/docs/Web/JavaScript',
     },
     {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      name: 'HTML',
+      imgSrc: '/images/skills/html.svg',
+      href: 'https://developer.mozilla.org/ja/docs/Web/HTML',
     },
     {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
-    },
-    {
-      name: 'Ruby',
-      imgSrc: '/images/ruby.svg',
-      href: 'https://example.com',
+      name: 'CSS',
+      imgSrc: '/images/skills/css.svg',
+      href: 'https://developer.mozilla.org/ja/docs/Web/CSS',
     },
   ],
 };
@@ -63,7 +58,7 @@ const Home: React.FC = () => {
       </Section>
 
       <Section title='Skills'>
-        <Skills items={skills}/>
+        <Skills languages={skills.languages}/>
       </Section>
     </Layout>
   );

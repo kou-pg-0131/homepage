@@ -4,6 +4,11 @@
     justify-content: center;
   }
 
+  &__itemLink {
+    color: #000;
+    text-decoration: none;
+  }
+
   &__item {
     align-items: center;
     border: 1px solid #ccc;

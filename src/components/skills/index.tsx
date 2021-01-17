@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { SkillCardList } from './skillCardList';
+import { SkillCardList } from './skillCardList/index';
 
 type Item = {
   name: string;
@@ -9,16 +9,14 @@ type Item = {
 };
 
 type Props = {
-  items: {
-    languages: Item[];
-  };
+  languages: Item[];
 };
 
 export const Skills: React.FC<Props> = (props: Props) => {
   return (
     <div className={styles.skills}>
       <h3 className={styles.skills__category}>Languages</h3>
-      <SkillCardList items={props.items.languages}/>
+      <SkillCardList items={props.languages}/>
     </div>
   );
 };
