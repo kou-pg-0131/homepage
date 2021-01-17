@@ -3,3 +3,7 @@
 
 # next.js
 /.next
+
+# serverless
+/.serverless
+/.serverless_nextjs
