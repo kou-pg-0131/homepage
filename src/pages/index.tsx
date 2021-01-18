@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
 import { PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
+import { Divider } from '@material-ui/core';
 import { Skill, getSkills } from '../lib/skills';
 
 const socials = [
@@ -62,6 +63,8 @@ const Home: React.FC<Props> = (props: Props) => {
         <User socials={socials}/>
       </Section>
 
+      <Divider/>
+
       <Section title='Skills'>
         {props.skills.map(item => (
           <React.Fragment key={item.category}>
@@ -70,6 +73,8 @@ const Home: React.FC<Props> = (props: Props) => {
           </React.Fragment>
         ))}
       </Section>
+
+      <Divider/>
 
       <Section title='Portfolios'>
         {portfolios.map(portfolio => (
