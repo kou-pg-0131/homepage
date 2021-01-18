@@ -1,19 +1,18 @@
 import React from 'react';
+import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { Section, Skills, User } from '../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { Section, SkillCardList, User, Portfolios, Icon } from '../components';
 import { Skill, getSkills } from '../lib/skills';
 
 const socials = [
   {
     href: 'https://github.com/kou-pg-0131',
-    icon: <FontAwesomeIcon icon={faGithubSquare}/>,
+    icon: <Icon name='github-square'/>,
   },
   {
     href: 'https://twitter.com/kou_pg_0131',
-    icon: <FontAwesomeIcon icon={faTwitterSquare}/>,
+    icon: <Icon name='twitter-square'/>,
   },
 ];
 
@@ -32,7 +31,16 @@ const Home: React.FC<Props> = (props: Props) => {
       </Section>
 
       <Section title='Skills'>
-        <Skills skills={props.skills}/>
+        {props.skills.map(item => (
+          <React.Fragment key={item.category}>
+            <h3 className={styles.category}>{item.category}</h3>
+            <SkillCardList items={item.items}/>
+          </React.Fragment>
+        ))}
+      </Section>
+
+      <Section title='Portfolios'>
+        <Portfolios/>
       </Section>
     </Layout>
   );

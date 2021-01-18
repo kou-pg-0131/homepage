@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { Grid } from '@material-ui/core';
-import { ExternalLink } from '../../../components';
+import { ExternalLink } from '../';
 
 type Props = {
   items: {
