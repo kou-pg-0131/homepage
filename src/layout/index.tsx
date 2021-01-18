@@ -13,8 +13,8 @@ export const Layout: React.FC<Props> = (props: Props) => {
       <Head>
         <title>Koki Sato</title>
       </Head>
+      <Header/>
       <main>
-        <Header/>
         {props.children}
       </main>
       <Footer/>

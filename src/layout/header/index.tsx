@@ -6,7 +6,7 @@ import { Link } from '../../components';
 export const Header: React.FC = () => {
   return (
     <AppBar className={styles.root}>
-      <Toolbar>
+      <Toolbar className={styles.toolbar}>
         <h1 className={styles.title}>
           <Avatar className={styles.avatar} src='/images/profile.png' alt='Koki Sato'/>
           Koki Sato
