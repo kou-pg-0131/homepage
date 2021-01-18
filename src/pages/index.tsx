@@ -99,7 +99,11 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='history'/>
 
       <Section title='History'>
-        WIP
+        <div style={{ textAlign: 'center', color: 'red' }}>
+          <strong>
+            WIP
+          </strong>
+        </div>
       </Section>
     </Layout>
   );
