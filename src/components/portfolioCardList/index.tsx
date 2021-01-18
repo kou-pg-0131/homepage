@@ -7,7 +7,7 @@ type Props = {
     title: string;
     description: string;
     imgSrc?: string;
-    url: string;
+    url?: string;
     githubUrl: string;
   }[];
 };
