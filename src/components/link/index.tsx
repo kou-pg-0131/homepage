@@ -10,6 +10,8 @@ export const Link: React.FC<Props> = (props: Props) => {
   return (
     <ScrollLink
       smooth
+      spy
+      activeClass='active'
       to={props.to}
       duration={500}
     >

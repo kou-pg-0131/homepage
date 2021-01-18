@@ -3,6 +3,11 @@ import { AppProps } from 'next/app';
 import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#161616',
+    },
+  },
   overrides: {
     MuiCssBaseline: {
       '@global': {
@@ -10,7 +15,6 @@ const theme = createMuiTheme({
           fontFamily: 'Raleway, sans-serif',
         },
         a: {
-          color: '#000',
           cursor: 'pointer',
           textDecoration: 'none',
         },

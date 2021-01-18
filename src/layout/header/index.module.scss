@@ -3,6 +3,7 @@
 }
 
 .title {
+  display: flex;
   flex-grow: 1;
 }
 
@@ -15,5 +16,6 @@
 }
 
 .menuItem {
+  color: #fff;
   margin: 0 8px;
 }
