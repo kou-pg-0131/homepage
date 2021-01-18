@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { Section, SkillCardList, User, Portfolios, Icon } from '../components';
+import { Section, SkillCardList, User, ExternalLink, Icon } from '../components';
 import { Skill, getSkills } from '../lib/skills';
 
 const socials = [
@@ -40,7 +40,18 @@ const Home: React.FC<Props> = (props: Props) => {
       </Section>
 
       <Section title='Portfolios'>
-        <Portfolios/>
+        <h3 className={styles.category}>Web Services</h3>
+        <div>
+          <ExternalLink href='https://nojov.kou-pg.com'>
+            <h4 className={styles.itemTitle}>
+              Nojov - プログラミング言語別求人数ビューア
+              <Icon name='external-link'/>
+            </h4>
+          </ExternalLink>
+          <ExternalLink href='https://nojov.kou-pg.com'>
+            <img className={styles.itemImg} src="/images/portfolios/nojov.png" alt="Nojov - プログラミング言語別求人数ビューア"/>
+          </ExternalLink>
+        </div>
       </Section>
     </Layout>
   );
