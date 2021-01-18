@@ -6,3 +6,4 @@ export * from './skillCardList';
 export * from './skillCard';
 export * from './portfolioCard';
 export * from './portfolioCardList';
+export * from './link';

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
+import { Link, PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
 import { Divider } from '@material-ui/core';
 import { Skill, getSkills } from '../lib/skills';
 
@@ -63,7 +63,18 @@ const Home: React.FC<Props> = (props: Props) => {
         <User socials={socials}/>
       </Section>
 
-      <Divider/>
+      <ul style={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        maxWidth: 550,
+        margin: '20px auto',
+      }}>
+        <li><Link to='skills'>Skills</Link></li>
+        <li><Link to='portfolios'>Portfolios</Link></li>
+        <li><Link to='history'>History</Link></li>
+      </ul>
+
+      <Divider id='skills'/>
 
       <Section title='Skills'>
         {props.skills.map(item => (
@@ -74,7 +85,7 @@ const Home: React.FC<Props> = (props: Props) => {
         ))}
       </Section>
 
-      <Divider/>
+      <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
         {portfolios.map(portfolio => (
@@ -83,6 +94,12 @@ const Home: React.FC<Props> = (props: Props) => {
             <PortfolioCardList portfolios={portfolio.items}/>
           </React.Fragment>
         ))}
+      </Section>
+
+      <Divider id='history'/>
+
+      <Section title='History'>
+        WIP
       </Section>
     </Layout>
   );

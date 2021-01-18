@@ -11,6 +11,7 @@ const theme = createMuiTheme({
         },
         a: {
           color: '#000',
+          cursor: 'pointer',
           textDecoration: 'none',
         },
         img: {
@@ -18,6 +19,10 @@ const theme = createMuiTheme({
         },
         p: {
           margin: 0,
+        },
+        ul: {
+          listStyleType: 'none',
+          padding: 0,
         },
       },
     },
