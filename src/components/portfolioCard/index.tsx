@@ -13,7 +13,7 @@ type Props = {
 
 export const PortfolioCard: React.FC<Props> = (props: Props) => {
   return (
-    <Card>
+    <Card raised>
       {props.imgSrc && props.url && (
         <CardActionArea>
           <ExternalLink href={props.url}>
