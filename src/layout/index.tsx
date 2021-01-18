@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { Header } from './header';
 import { Footer } from './footer';
 
 type Props = {
@@ -13,6 +14,7 @@ export const Layout: React.FC<Props> = (props: Props) => {
         <title>Koki Sato</title>
       </Head>
       <main>
+        <Header/>
         {props.children}
       </main>
       <Footer/>
