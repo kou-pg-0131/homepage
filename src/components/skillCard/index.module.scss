@@ -1,19 +1,11 @@
-.root {
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-shadow: 0 3px 3px 0 #ddd;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  justify-content: center;
-  transition: 0.3s;
+.link {
+  display: block;
   width: 100%;
+}
 
-  &:hover {
-    transform: translateY(-4px);
-  }
+.card {
+  display: flex;
+  justify-content: center;
 }
 
 .img {
@@ -24,4 +16,5 @@
 
 .name {
   font-weight: bold;
+  text-align: center;
 }
