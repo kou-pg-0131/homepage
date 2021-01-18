@@ -13,6 +13,9 @@ const theme = createMuiTheme({
           color: '#000',
           textDecoration: 'none',
         },
+        img: {
+          maxWidth: '100%',
+        },
         p: {
           margin: 0,
         },
