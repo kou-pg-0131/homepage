@@ -63,15 +63,10 @@ const Home: React.FC<Props> = (props: Props) => {
         <User socials={socials}/>
       </Section>
 
-      <ul style={{
-        display: 'flex',
-        justifyContent: 'space-around',
-        maxWidth: 550,
-        margin: '20px auto',
-      }}>
-        <li><Link to='skills'>Skills</Link></li>
-        <li><Link to='portfolios'>Portfolios</Link></li>
-        <li><Link to='history'>History</Link></li>
+      <ul className={styles.menu}>
+        <li><Link className={styles.menuLink} to='skills'>Skills</Link></li>
+        <li><Link className={styles.menuLink} to='portfolios'>Portfolios</Link></li>
+        <li><Link className={styles.menuLink} to='history'>History</Link></li>
       </ul>
 
       <Divider id='skills'/>

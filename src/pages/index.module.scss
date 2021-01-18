@@ -1,3 +1,19 @@
 .category {
   text-align: center;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  max-width: 550px;
+  margin: 20px auto;
+}
+
+.menuLink {
+  padding: 8px;
+  transition: 0.15s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
