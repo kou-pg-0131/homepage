@@ -56,6 +56,17 @@ skills:
       - name: Redis
         imgSrc: /images/skills/redis.svg
         href: https://redis.io/
+  - category: Cloud
+    items:
+      - name: AWS
+        imgSrc: /images/skills/aws.svg
+        href: https://aws.amazon.com
+      - name: GCP
+        imgSrc: /images/skills/gcp.svg
+        href: https://console.cloud.google.com
+      - name: Vercel
+        imgSrc: /images/skills/vercel.svg
+        href: https://vercel.com
   - category: CI/CD
     items:
       - name: CircleCI
