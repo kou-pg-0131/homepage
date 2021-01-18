@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { Footer } from './footer';
 
 type Props = {
   children: React.ReactNode;
@@ -11,9 +12,10 @@ export const Layout: React.FC<Props> = (props: Props) => {
       <Head>
         <title>Koki Sato</title>
       </Head>
-      <div>
+      <main>
         {props.children}
-      </div>
+      </main>
+      <Footer/>
     </React.Fragment>
   );
 };
