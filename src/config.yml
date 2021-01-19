@@ -9,6 +9,7 @@ skills:
         href: https://www.ruby-lang.org/ja/
       - name: Node.js
         imgSrc: /images/skills/nodejs.svg
+        href: https://nodejs.org/en/
       - name: TypeScript
         imgSrc: /images/skills/typescript.svg
         href: https://www.typescriptlang.org/
