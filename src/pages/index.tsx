@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
+import { PortfolioCardList, Section, SkillCardList, SkillCard, User, Icon } from '../components';
 import { Divider } from '@material-ui/core';
 import { Skill } from '../lib/skills';
 import { getConfig } from '../lib/config';
@@ -49,7 +49,16 @@ const Home: React.FC<Props> = (props: Props) => {
         {props.skills.map(item => (
           <React.Fragment key={item.category}>
             <h3 className={styles.category}>{item.category}</h3>
-            <SkillCardList items={item.items}/>
+            <SkillCardList>
+              {item.items.map(skill => (
+                <SkillCard
+                  key={skill.name}
+                  name={skill.name}
+                  imgSrc={skill.imgSrc}
+                  href={skill.href}
+                />
+              ))}
+            </SkillCardList>
           </React.Fragment>
         ))}
       </Section>
