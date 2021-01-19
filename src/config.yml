@@ -132,6 +132,9 @@ portfolios:
         githubUrl: https://github.com/kou-pg-0131/lgtm-generator-ui
   - category: Tools
     items:
+      - title: circleci-env
+        description: CircleCI プロジェクトの環境変数をローカルの .env で管理する CLI ツール。
+        githubUrl: https://github.com/kou-pg-0131/circleci-env
       - title: docker-tags
         description: 特定の Docker イメージのタグ一覧を取得して出力する CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/docker-tags
