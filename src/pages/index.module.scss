@@ -1,38 +1,19 @@
-.about {
-  font-size: 22px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-  &__user {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-  }
-
-  &__tagline {
-    color: #aaa;
-  }
+.category {
+  text-align: center;
 }
 
-.socials {
+.menu {
   display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 8px 0 0;
-  padding: 0;
+  justify-content: space-around;
+  max-width: 550px;
+  margin: 20px auto;
+}
 
-  &__item {
-    font-size: 50px;
-    margin: 8px;
-  }
+.menuLink {
+  padding: 8px;
+  transition: 0.15s;
 
-  &__itemLink {
-    color: #000;
-    transition: 0.5s;
-    &:hover {
-      color: #0a59b0;
-    }
+  &:hover {
+    opacity: 0.5;
   }
 }

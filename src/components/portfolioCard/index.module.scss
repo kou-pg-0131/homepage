@@ -1,0 +1,25 @@
+.img {
+    height: 200px;
+}
+
+@media screen and (min-width:600px) {
+  .img {
+    height: 280px;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .img {
+    height: 300px;
+  }
+}
+
+.content {
+  padding-bottom: 8px !important;
+}
+
+.title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}

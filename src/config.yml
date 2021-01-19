@@ -1,0 +1,115 @@
+skills:
+  - category: Languages
+    items:
+      - name: Go
+        imgSrc: /images/skills/go.svg
+        href: https://golang.org/
+      - name: Ruby
+        imgSrc: /images/skills/ruby.svg
+        href: https://www.ruby-lang.org/ja/
+      - name: TypeScript
+        imgSrc: /images/skills/typescript.svg
+        href: https://www.typescriptlang.org/
+      - name: JavaScript
+        imgSrc: /images/skills/javascript.svg
+        href: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+      - name: VB.NET
+        imgSrc: /images/skills/vb.net.svg
+        href: https://docs.microsoft.com/ja-jp/dotnet/visual-basic/
+      - name: HTML
+        imgSrc: /images/skills/html.svg
+        href: https://developer.mozilla.org/en-US/docs/Web/HTML
+      - name: CSS
+        imgSrc: /images/skills/css.svg
+        href: https://developer.mozilla.org/en-US/docs/Web/CSS
+      - name: Sass
+        imgSrc: /images/skills/sass.svg
+        href: https://sass-lang.com/
+  - category: Frameworks
+    items:
+      - name: Gin
+        imgSrc: /images/skills/gin.svg
+        href: https://gin-gonic.com/
+      - name: Rails
+        imgSrc: /images/skills/rails.svg
+        href: https://rubyonrails.org/
+      - name: React
+        imgSrc: /images/skills/react.svg
+        href: https://reactjs.org/
+      - name: Next.js
+        imgSrc: /images/skills/nextjs.svg
+        href: https://nextjs.org/
+      - name: Jekyll
+        imgSrc: /images/skills/jekyll.svg
+        href: https://jekyllrb.com/
+      - name: .NET
+        imgSrc: /images/skills/dotnet.svg
+        href: https://dotnet.microsoft.com/
+  - category: RDB/NoSQL
+    items:
+      - name: MySQL
+        imgSrc: /images/skills/mysql.svg
+        href: https://www.mysql.com/
+      - name: PostgreSQL
+        imgSrc: /images/skills/postgresql.svg
+        href: https://www.postgresql.org/
+      - name: Redis
+        imgSrc: /images/skills/redis.svg
+        href: https://redis.io/
+  - category: Cloud
+    items:
+      - name: AWS
+        imgSrc: /images/skills/aws.svg
+        href: https://aws.amazon.com
+      - name: GCP
+        imgSrc: /images/skills/gcp.svg
+        href: https://console.cloud.google.com
+      - name: Vercel
+        imgSrc: /images/skills/vercel.svg
+        href: https://vercel.com
+  - category: CI/CD
+    items:
+      - name: CircleCI
+        imgSrc: /images/skills/circleci.svg
+        href: https://circleci.com/
+      - name: GitHub Actions
+        imgSrc: /images/skills/githubactions.png
+        href: https://github.com/features/actions
+      - name: Jenkins
+        imgSrc: /images/skills/jenkins.svg
+        href: https://www.jenkins.io/
+  - category: Other
+    items:
+      - name: Docker
+        imgSrc: /images/skills/docker.svg
+        href: https://www.docker.com/
+      - name: Serverless
+        imgSrc: /images/skills/serverless.svg
+        href: https://www.serverless.com/
+      - name: Ansible
+        imgSrc: /images/skills/ansible.svg
+        href: https://www.ansible.com/
+      - name: Terraform
+        imgSrc: /images/skills/terraform.svg
+        href: https://www.terraform.io/
+      - name: Webpack
+        imgSrc: /images/skills/webpack.svg
+        href: https://webpack.js.org/
+      - name: Gulp
+        imgSrc: /images/skills/gulp.svg
+        href: https://gulpjs.com/
+      - name: Swagger
+        imgSrc: /images/skills/swagger.svg
+        href: https://swagger.io/
+      - name: Packer
+        imgSrc: /images/skills/packer.svg
+        href: https://www.packer.io/
+      - name: Material-UI
+        imgSrc: /images/skills/material-ui.svg
+        href: https://material-ui.com/
+      - name: Bootstrap
+        imgSrc: /images/skills/bootstrap.svg
+        href: https://getbootstrap.com/
+      - name: jQuery
+        imgSrc: /images/skills/jquery.svg
+        href: https://jquery.com/
