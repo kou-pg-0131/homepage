@@ -32,7 +32,7 @@ const PrivacyPolicy: React.FC = () => {
   ];
 
   return (
-    <Layout hideMenu>
+    <Layout hideMenu title='プライバシーポリシー'>
       {items.map(item => (
         <Section key={item.title} title={item.title}>
           {item.content}
