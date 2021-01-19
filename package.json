@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
-    "lint": "eslint './**/*.ts' './**/*.tsx'",
+    "lint": "eslint './**/*.ts' './**/*.tsx' --max-warnings 0",
     "test:compile": "tsc --noEmit"
   },
   "dependencies": {
