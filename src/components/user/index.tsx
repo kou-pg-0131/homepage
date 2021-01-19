@@ -1,19 +1,19 @@
 import React from 'react';
-import { About } from './about';
-import { SocialList } from './socialList';
+import styles from './index.module.scss';
 
 type Props = {
-  socials: {
-    href: string;
-    icon: React.ReactNode;
-  }[];
+  name: string;
+  imgSrc: string;
 };
 
 export const User: React.FC<Props> = (props: Props) => {
   return (
-    <div>
-      <About/>
-      <SocialList items={props.socials}/>
+    <div className={styles.root}>
+      <div className={styles.user}>
+        <img className={styles.img} src='/images/profile.png' alt={props.name}/>
+        <p>Koki Sato</p>
+      </div>
+      <p className={styles.tagline}>Developer</p>
     </div>
   );
 };

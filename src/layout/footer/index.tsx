@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <small>
-        &copy;2021 koki sato
+        &copy;2021
       </small>
     </footer>
   );

@@ -14,7 +14,7 @@ type Props = {
 
 export const PortfolioCardList: React.FC<Props> = (props: Props) => {
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={4} style={{ marginBottom: 12 }}>
       {props.portfolios.map(portfolio => (
         <Grid key={portfolio.title} item xs={12}>
           <PortfolioCard
