@@ -4,7 +4,8 @@ import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
 import { PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
 import { Divider } from '@material-ui/core';
-import { Skill, getSkills } from '../lib/skills';
+import { Skill } from '../lib/skills';
+import { getConfig } from '../lib/config';
 
 const socials = [
   {
@@ -99,11 +100,11 @@ const Home: React.FC<Props> = (props: Props) => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const skills = getSkills();
+  const config = getConfig();
 
   return {
     props: {
-      skills,
+      skills: config.skills,
     },
   };
 };
