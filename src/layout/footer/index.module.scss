@@ -5,3 +5,16 @@
   padding: 24px;
   flex-direction: column;
 }
+
+.listItem {
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.link {
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
