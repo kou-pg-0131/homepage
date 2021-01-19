@@ -7,6 +7,8 @@ skills:
       - name: Ruby
         imgSrc: /images/skills/ruby.svg
         href: https://www.ruby-lang.org/ja/
+      - name: Node.js
+        imgSrc: /images/skills/nodejs.svg
       - name: TypeScript
         imgSrc: /images/skills/typescript.svg
         href: https://www.typescriptlang.org/
