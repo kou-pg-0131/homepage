@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { SocialList, SocialListItem, PortfolioCardList, Section, SkillCardList, SkillCardListItem, User } from '../components';
+import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
 import { Skill, Social, Portfolio } from '../domain';
 import { getConfig } from '../lib/config';
@@ -60,7 +60,14 @@ const Home: React.FC<Props> = (props: Props) => {
         {props.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
             <h3 className={styles.category}>{portfolio.category}</h3>
-            <PortfolioCardList portfolios={portfolio.items}/>
+            <PortfolioCardList>
+              {portfolio.items.map(item => (
+                <PortfolioCardListItem
+                  key={item.title}
+                  portfolio={item}
+                />
+              ))}
+            </PortfolioCardList>
           </React.Fragment>
         ))}
       </Section>
