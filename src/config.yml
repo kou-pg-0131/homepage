@@ -146,9 +146,18 @@ portfolios:
         githubUrl: https://github.com/kou-pg-0131/lgtm-generator-ui
   - category: Tools
     items:
+      - title: Qiita LGTM Ranking
+        description: Qiita の LGTM ランキング記事を毎日自動更新するシステム。
+        githubUrl: https://github.com/kou-pg-0131/qiita-lgtm-ranking
+      - title: AWS Cost Notifier
+        description: AWS の月間費用を毎朝 Slack に通知するシステム。
+        githubUrl: https://github.com/kou-pg-0131/aws-cost-notifier
       - title: circleci-env
         description: CircleCI プロジェクトの環境変数をローカルの .env で管理する CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/circleci-env
+      - title: s3fzf
+        description: S3 のオブジェクトを fzf ライクに検索して操作することができる CLI ツール。
+        githubUrl: https://github.com/kou-pg-0131/s3fzf
       - title: docker-tags
         description: 特定の Docker イメージのタグ一覧を取得して出力する CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/docker-tags
