@@ -1,25 +1,17 @@
 .root {
-  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .toolbar {
   height: 80px;
 }
 
-.title {
-  display: flex;
-  flex-grow: 1;
-}
-
-.avatar {
-  margin-right: 4px;
-}
-
 .menu {
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .menuItem {
-  color: #fff;
   margin: 0 8px;
 }
