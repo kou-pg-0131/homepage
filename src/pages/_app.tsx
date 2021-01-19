@@ -1,5 +1,5 @@
 import React from 'react';
-import './_app.module.scss';
+import './global.scss';
 import { AppProps } from 'next/app';
 import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 
