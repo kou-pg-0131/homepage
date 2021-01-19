@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { Link, PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
+import { PortfolioCardList, Section, SkillCardList, User, Icon } from '../components';
 import { Divider } from '@material-ui/core';
 import { Skill, getSkills } from '../lib/skills';
 
