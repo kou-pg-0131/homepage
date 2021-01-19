@@ -1,0 +1,10 @@
+.listItem {
+  margin: 0 12px;
+}
+
+.link {
+  transition: 0.1s;
+  &:hover {
+    opacity: 0.6;
+  }
+}

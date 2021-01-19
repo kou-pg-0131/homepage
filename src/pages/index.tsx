@@ -2,21 +2,10 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { PortfolioCardList, Section, SkillCardList, SkillCardListItem, User, Icon } from '../components';
+import { SocialList, SocialListItem, PortfolioCardList, Section, SkillCardList, SkillCardListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
 import { Skill } from '../lib/skills';
 import { getConfig } from '../lib/config';
-
-const socials = [
-  {
-    href: 'https://github.com/kou-pg-0131',
-    icon: <Icon name='github-square'/>,
-  },
-  {
-    href: 'https://twitter.com/kou_pg_0131',
-    icon: <Icon name='twitter-square'/>,
-  },
-];
 
 type Props = {
   skills: {
@@ -40,7 +29,29 @@ const Home: React.FC<Props> = (props: Props) => {
   return (
     <Layout>
       <Section>
-        <User socials={socials}/>
+        <User/>
+        <SocialList>
+          <SocialListItem
+            href='https://github.com/kou-pg-0131'
+            name='GitHub'
+            imgSrc="/images/socials/github.svg"
+          />
+          <SocialListItem
+            href='https://twitter.com/kou_pg_0131'
+            name='Twitter'
+            imgSrc="/images/socials/twitter.svg"
+          />
+          <SocialListItem
+            href='https://zenn.dev/kou_pg_0131'
+            name='Zenn'
+            imgSrc="/images/socials/zenn.svg"
+          />
+          <SocialListItem
+            href='mailto:kou.pg.0131@gmail.com'
+            name='GMail'
+            imgSrc="/images/socials/gmail.svg"
+          />
+        </SocialList>
       </Section>
 
       <Divider id='skills'/>
