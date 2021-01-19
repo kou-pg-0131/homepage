@@ -7,7 +7,7 @@ type Props = {
   to: string;
 };
 
-export const Link: React.FC<Props> = (props: Props) => {
+export const AnchorLink: React.FC<Props> = (props: Props) => {
   return (
     <ScrollLink
       className={props.className}

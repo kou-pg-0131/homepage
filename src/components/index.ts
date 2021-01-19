@@ -5,6 +5,6 @@ export * from './skillCardList';
 export * from './skillCardListItem';
 export * from './portfolioCard';
 export * from './portfolioCardList';
-export * from './link';
+export * from './anchorLink';
 export * from './socialList';
 export * from './socialListItem';

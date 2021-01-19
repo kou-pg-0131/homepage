@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './index.module.scss';
 import { Avatar, Divider, Drawer, Hidden, Container, AppBar, Toolbar, IconButton, List, ListItem } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
-import { Link } from '../../components';
+import { AnchorLink } from '../../components';
 
 export const Header: React.FC = () => {
   const [openSideMenu, setOpenSideMenu] = useState<boolean>(false);
@@ -32,9 +32,9 @@ export const Header: React.FC = () => {
 
           <Hidden xsDown>
             <ul className={styles.menu}>
-              <li className={styles.menuItem}><Link to='skills'>Skills</Link></li>
-              <li className={styles.menuItem}><Link to='portfolios'>Portfolios</Link></li>
-              <li className={styles.menuItem}><Link to='history'>History</Link></li>
+              <li className={styles.menuItem}><AnchorLink to='skills'>Skills</AnchorLink></li>
+              <li className={styles.menuItem}><AnchorLink to='portfolios'>Portfolios</AnchorLink></li>
+              <li className={styles.menuItem}><AnchorLink to='history'>History</AnchorLink></li>
             </ul>
           </Hidden>
           <Hidden smUp>
@@ -43,11 +43,11 @@ export const Header: React.FC = () => {
             </div>
             <Drawer anchor='right' open={openSideMenu} onClose={handleCloseSideMenu}>
               <List className={styles.sideMenu}>
-                <Link to='skills'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Skills</ListItem></Link>
+                <AnchorLink to='skills'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Skills</ListItem></AnchorLink>
                 <Divider/>
-                <Link to='portfolios'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Portfolios</ListItem></Link>
+                <AnchorLink to='portfolios'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Portfolios</ListItem></AnchorLink>
                 <Divider/>
-                <Link to='history'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>History</ListItem></Link>
+                <AnchorLink to='history'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>History</ListItem></AnchorLink>
                 <Divider/>
               </List>
             </Drawer>
