@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { ExternalLink } from '..';
-import { Card, CardContent, CardActionArea, CardActions, Button, CardMedia, Grid } from '@material-ui/core';
+import { Card, CardHeader, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import { Portfolio } from '../../domain';
 
 type Props = {
@@ -22,20 +22,13 @@ export const PortfolioCardListItem: React.FC<Props> = (props: Props) => {
             </ExternalLink>
           </CardActionArea>
         )}
+        <CardHeader title={props.portfolio.title} titleTypographyProps={{ className: styles.title }}/>
         <CardContent className={styles.content}>
-          <p className={styles.title}>{props.portfolio.title}</p>
           <p>{props.portfolio.description}</p>
-        </CardContent>
-        <CardActions>
-          <Button
-            fullWidth
-            href={props.portfolio.githubUrl}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
+          <ExternalLink className={styles.githubLink} href={props.portfolio.githubUrl}>
             View on GitHub
-          </Button>
-        </CardActions>
+          </ExternalLink>
+        </CardContent>
       </Card>
     </Grid>
   );

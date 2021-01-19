@@ -20,7 +20,7 @@ const theme = createMuiTheme({
           maxWidth: '100%',
         },
         p: {
-          margin: 0,
+          marginTop: 0,
         },
         ul: {
           listStyleType: 'none',
