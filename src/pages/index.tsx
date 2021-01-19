@@ -4,15 +4,11 @@ import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
 import { SocialList, SocialListItem, PortfolioCardList, Section, SkillCardList, SkillCardListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
-import { Skill } from '../lib/skills';
+import { Skill, Social, Portfolio } from '../domain';
 import { getConfig } from '../lib/config';
 
 type Props = {
-  socials: {
-    name: string;
-    href: string;
-    imgSrc: string;
-  }[];
+  socials: Social[];
 
   skills: {
     category: string;
@@ -21,13 +17,7 @@ type Props = {
 
   portfolios: {
     category: string;
-    items: {
-      title: string;
-      description: string;
-      imgSrc?: string;
-      url?: string;
-      githubUrl: string;
-    }[];
+    items: Portfolio[];
   }[];
 };
 
