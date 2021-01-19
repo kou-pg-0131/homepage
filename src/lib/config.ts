@@ -1,31 +1,18 @@
 import * as fs from 'fs';
 import * as yaml from 'js-yaml';
+import { Social, Skill, Portfolio } from '../domain';
 
 export type Config = {
-  socials: {
-    name: string;
-    href: string;
-    imgSrc: string;
-  }[];
+  socials: Social[];
 
   skills: {
     category: string;
-    items: {
-      name: string;
-      imgSrc: string;
-      href: string;
-    }[];
+    items: Skill[];
   }[];
 
   portfolios: {
     category: string;
-    items: {
-      title: string;
-      description: string;
-      imgSrc?: string;
-      url?: string;
-      githubUrl: string;
-    }[];
+    items: Portfolio[];
   }[];
 };
 
