@@ -9,7 +9,7 @@ type Props = {
   href: string;
 };
 
-export const SkillCard: React.FC<Props> = (props: Props) => {
+export const SkillCardListItem: React.FC<Props> = (props: Props) => {
   return (
     <Grid item xs={6} sm={3}>
       <ExternalLink className={styles.link} href={props.href}>

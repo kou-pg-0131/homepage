@@ -3,7 +3,7 @@ export * from './user';
 export * from './externalLink';
 export * from './icon';
 export * from './skillCardList';
-export * from './skillCard';
+export * from './skillCardListItem';
 export * from './portfolioCard';
 export * from './portfolioCardList';
 export * from './link';
