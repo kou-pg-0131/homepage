@@ -46,9 +46,7 @@ const Home: React.FC<Props> = (props: Props) => {
               {item.items.map(skill => (
                 <SkillCardListItem
                   key={skill.name}
-                  name={skill.name}
-                  imgSrc={skill.imgSrc}
-                  href={skill.href}
+                  skill={skill}
                 />
               ))}
             </SkillCardList>
