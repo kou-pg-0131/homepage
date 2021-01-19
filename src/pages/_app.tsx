@@ -36,7 +36,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (process.env.VERCEL_ENV === 'production') {
+    if (process.env.NEXT_PUBLIC_ENV === 'production') {
       window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, { page_path: router.pathname });
     }
   }, [router.pathname]);

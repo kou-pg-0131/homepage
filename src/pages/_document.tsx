@@ -7,7 +7,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           {/* Global site tag (gtag.js) - Google Analytics */}
-          {process.env.VERCEL_ENV === 'production' && (
+          {process.env.NEXT_PUBLIC_ENV === 'production' && (
             <React.Fragment>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
               <script
