@@ -19,6 +19,12 @@ export const Header: React.FC = () => {
     setOpenSideMenu(false);
   };
 
+  const menuItems = [
+    { text: 'Skills', to: 'skills' },
+    { text: 'Portfolios', to: 'portfolios' },
+    { text: 'History', to: 'history' },
+  ];
+
   return (
     <AppBar className={styles.root}>
       <Container maxWidth='md'>
@@ -32,9 +38,9 @@ export const Header: React.FC = () => {
 
           <Hidden xsDown>
             <ul className={styles.menu}>
-              <li className={styles.menuItem}><AnchorLink to='skills'>Skills</AnchorLink></li>
-              <li className={styles.menuItem}><AnchorLink to='portfolios'>Portfolios</AnchorLink></li>
-              <li className={styles.menuItem}><AnchorLink to='history'>History</AnchorLink></li>
+              {menuItems.map(item => (
+                <li key={item.to} className={styles.menuItem}><AnchorLink to={item.to}>{item.text}</AnchorLink></li>
+              ))}
             </ul>
           </Hidden>
           <Hidden smUp>
@@ -43,12 +49,12 @@ export const Header: React.FC = () => {
             </div>
             <Drawer anchor='right' open={openSideMenu} onClose={handleCloseSideMenu}>
               <List className={styles.sideMenu}>
-                <AnchorLink to='skills'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Skills</ListItem></AnchorLink>
-                <Divider/>
-                <AnchorLink to='portfolios'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Portfolios</ListItem></AnchorLink>
-                <Divider/>
-                <AnchorLink to='history'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>History</ListItem></AnchorLink>
-                <Divider/>
+                {menuItems.map(item => (
+                  <React.Fragment key={item.to}>
+                    <AnchorLink to={item.to}><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>{item.text}</ListItem></AnchorLink>
+                    <Divider/>
+                  </React.Fragment>
+                ))}
               </List>
             </Drawer>
           </Hidden>
