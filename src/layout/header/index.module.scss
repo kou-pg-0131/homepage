@@ -6,10 +6,22 @@
   height: 80px;
 }
 
+.title {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.titleLogo {
+  margin-right: 8px;
+}
+
+.titleText {
+  color: #000;
+}
+
 .menu {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
 }
 
 .menuItem {
@@ -18,4 +30,13 @@
   &:hover {
     opacity: 0.5;
   }
+}
+
+.sideMenu {
+  padding: 0 !important;
+  width: 200px;
+}
+
+.sideMenuItem {
+  padding: 20px !important;
 }

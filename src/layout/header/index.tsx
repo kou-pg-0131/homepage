@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.scss';
-import { Divider, Drawer, Hidden, Container, AppBar, Toolbar, IconButton, List, ListItem } from '@material-ui/core';
+import { Avatar, Divider, Drawer, Hidden, Container, AppBar, Toolbar, IconButton, List, ListItem } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
 import { Link } from '../../components';
 
@@ -21,32 +21,39 @@ export const Header: React.FC = () => {
 
   return (
     <AppBar className={styles.root}>
-      <Toolbar className={styles.toolbar}>
-        <Hidden xsDown>
-          <Container maxWidth='md'>
+      <Container maxWidth='md'>
+        <Toolbar className={styles.toolbar}>
+          <div className={styles.title}>
+            <Avatar className={styles.titleLogo} src='/images/profile.png'/>
+            <p className={styles.titleText}>
+              Koki Sato
+            </p>
+          </div>
+
+          <Hidden xsDown>
             <ul className={styles.menu}>
               <li className={styles.menuItem}><Link to='skills'>Skills</Link></li>
               <li className={styles.menuItem}><Link to='portfolios'>Portfolios</Link></li>
               <li className={styles.menuItem}><Link to='history'>History</Link></li>
             </ul>
-          </Container>
-        </Hidden>
-        <Hidden smUp>
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
-            <IconButton onClick={handleClickHamburger}><Menu/></IconButton>
-          </div>
-          <Drawer anchor='right' open={openSideMenu} onClose={handleCloseSideMenu}>
-            <List style={{ padding: 0 }}>
-              <Link to='skills'><ListItem className={styles.menuItem} onClick={handleClickSideMenuItem} style={{ padding: 20 }}>Skills</ListItem></Link>
-              <Divider/>
-              <Link to='portfolios'><ListItem className={styles.menuItem} onClick={handleClickSideMenuItem} style={{ padding: 20 }}>Portfolios</ListItem></Link>
-              <Divider/>
-              <Link to='history'><ListItem className={styles.menuItem} onClick={handleClickSideMenuItem} style={{ padding: 20 }}>History</ListItem></Link>
-              <Divider/>
-            </List>
-          </Drawer>
-        </Hidden>
-      </Toolbar>
+          </Hidden>
+          <Hidden smUp>
+            <div>
+              <IconButton onClick={handleClickHamburger}><Menu/></IconButton>
+            </div>
+            <Drawer anchor='right' open={openSideMenu} onClose={handleCloseSideMenu}>
+              <List className={styles.sideMenu}>
+                <Link to='skills'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Skills</ListItem></Link>
+                <Divider/>
+                <Link to='portfolios'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>Portfolios</ListItem></Link>
+                <Divider/>
+                <Link to='history'><ListItem className={`${styles.menuItem} ${styles.sideMenuItem}`} onClick={handleClickSideMenuItem}>History</ListItem></Link>
+                <Divider/>
+              </List>
+            </Drawer>
+          </Hidden>
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 };
