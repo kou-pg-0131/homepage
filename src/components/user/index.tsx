@@ -1,10 +1,19 @@
 import React from 'react';
-import { About } from './about';
+import styles from './index.module.scss';
 
-export const User: React.FC = () => {
+type Props = {
+  name: string;
+  imgSrc: string;
+};
+
+export const User: React.FC<Props> = (props: Props) => {
   return (
-    <div>
-      <About/>
+    <div className={styles.root}>
+      <div className={styles.user}>
+        <img className={styles.img} src='/images/profile.png' alt={props.name}/>
+        <p>Koki Sato</p>
+      </div>
+      <p className={styles.tagline}>Developer</p>
     </div>
   );
 };
