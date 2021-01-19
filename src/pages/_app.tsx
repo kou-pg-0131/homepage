@@ -1,6 +1,7 @@
-import React from 'react';
-import './_app.module.scss';
+import React, { useEffect } from 'react';
+import './global.scss';
 import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
@@ -20,7 +21,7 @@ const theme = createMuiTheme({
           maxWidth: '100%',
         },
         p: {
-          margin: 0,
+          marginTop: 0,
         },
         ul: {
           listStyleType: 'none',
@@ -32,6 +33,14 @@ const theme = createMuiTheme({
 });
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_ENV === 'production') {
+      window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, { page_path: router.pathname });
+    }
+  }, [router.pathname]);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>

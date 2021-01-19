@@ -3,8 +3,13 @@
 }
 
 .link {
-  transition: 0.1s;
+  transition: 0.2s;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.5;
   }
+}
+
+.img {
+  height: 40px;
+  width: 40px;
 }

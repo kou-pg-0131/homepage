@@ -11,7 +11,7 @@ export const User: React.FC<Props> = (props: Props) => {
     <div className={styles.root}>
       <div className={styles.user}>
         <img className={styles.img} src='/images/profile.png' alt={props.name}/>
-        <p>Koki Sato</p>
+        <p className={styles.name}>Koki Sato</p>
       </div>
       <p className={styles.tagline}>Developer</p>
     </div>

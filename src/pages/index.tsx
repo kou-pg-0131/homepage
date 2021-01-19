@@ -2,17 +2,13 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { SocialList, SocialListItem, PortfolioCardList, Section, SkillCardList, SkillCardListItem, User } from '../components';
+import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
-import { Skill } from '../lib/skills';
+import { Skill, Social, Portfolio } from '../domain';
 import { getConfig } from '../lib/config';
 
 type Props = {
-  socials: {
-    name: string;
-    href: string;
-    imgSrc: string;
-  }[];
+  socials: Social[];
 
   skills: {
     category: string;
@@ -21,13 +17,7 @@ type Props = {
 
   portfolios: {
     category: string;
-    items: {
-      title: string;
-      description: string;
-      imgSrc?: string;
-      url?: string;
-      githubUrl: string;
-    }[];
+    items: Portfolio[];
   }[];
 };
 
@@ -40,9 +30,7 @@ const Home: React.FC<Props> = (props: Props) => {
           {props.socials.map(social => (
             <SocialListItem
               key={social.name}
-              href={social.href}
-              name={social.name}
-              imgSrc={social.imgSrc}
+              social={social}
             />
           ))}
         </SocialList>
@@ -58,9 +46,7 @@ const Home: React.FC<Props> = (props: Props) => {
               {item.items.map(skill => (
                 <SkillCardListItem
                   key={skill.name}
-                  name={skill.name}
-                  imgSrc={skill.imgSrc}
-                  href={skill.href}
+                  skill={skill}
                 />
               ))}
             </SkillCardList>
@@ -74,7 +60,14 @@ const Home: React.FC<Props> = (props: Props) => {
         {props.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
             <h3 className={styles.category}>{portfolio.category}</h3>
-            <PortfolioCardList portfolios={portfolio.items}/>
+            <PortfolioCardList>
+              {portfolio.items.map(item => (
+                <PortfolioCardListItem
+                  key={item.title}
+                  portfolio={item}
+                />
+              ))}
+            </PortfolioCardList>
           </React.Fragment>
         ))}
       </Section>

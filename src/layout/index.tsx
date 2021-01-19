@@ -6,15 +6,17 @@ import { Footer } from './footer';
 
 type Props = {
   children: React.ReactNode;
+  title?: string;
+  hideMenu?: boolean;
 };
 
 export const Layout: React.FC<Props> = (props: Props) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Koki Sato</title>
+        <title>{props.title && `${props.title} | `}Koki Sato</title>
       </Head>
-      <Header/>
+      <Header hideMenu={props.hideMenu}/>
       <main className={styles.main}>
         {props.children}
       </main>
