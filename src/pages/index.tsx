@@ -40,9 +40,7 @@ const Home: React.FC<Props> = (props: Props) => {
           {props.socials.map(social => (
             <SocialListItem
               key={social.name}
-              href={social.href}
-              name={social.name}
-              imgSrc={social.imgSrc}
+              social={social}
             />
           ))}
         </SocialList>
