@@ -2,6 +2,12 @@ import * as fs from 'fs';
 import * as yaml from 'js-yaml';
 
 export type Config = {
+  socials: {
+    name: string;
+    href: string;
+    imgSrc: string;
+  }[];
+
   skills: {
     category: string;
     items: {

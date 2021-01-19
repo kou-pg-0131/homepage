@@ -1,3 +1,17 @@
+socials:
+  - href: https://github.com/kou-pg-0131
+    name: GitHub
+    imgSrc: /images/socials/github.svg
+  - href: https://twitter.com/kou_pg_0131
+    name: Twitter
+    imgSrc: /images/socials/twitter.svg
+  - href: https://zenn.dev/kou_pg_0131
+    name: Zenn
+    imgSrc: /images/socials/zenn.svg
+  - href: mailto:kou.pg.0131@gmail.com
+    name: GMail
+    imgSrc: /images/socials/gmail.svg
+
 skills:
   - category: Languages
     items:

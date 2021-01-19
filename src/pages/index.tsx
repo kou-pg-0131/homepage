@@ -8,6 +8,12 @@ import { Skill } from '../lib/skills';
 import { getConfig } from '../lib/config';
 
 type Props = {
+  socials: {
+    name: string;
+    href: string;
+    imgSrc: string;
+  }[];
+
   skills: {
     category: string;
     items: Skill[];
@@ -31,26 +37,14 @@ const Home: React.FC<Props> = (props: Props) => {
       <Section>
         <User/>
         <SocialList>
-          <SocialListItem
-            href='https://github.com/kou-pg-0131'
-            name='GitHub'
-            imgSrc="/images/socials/github.svg"
-          />
-          <SocialListItem
-            href='https://twitter.com/kou_pg_0131'
-            name='Twitter'
-            imgSrc="/images/socials/twitter.svg"
-          />
-          <SocialListItem
-            href='https://zenn.dev/kou_pg_0131'
-            name='Zenn'
-            imgSrc="/images/socials/zenn.svg"
-          />
-          <SocialListItem
-            href='mailto:kou.pg.0131@gmail.com'
-            name='GMail'
-            imgSrc="/images/socials/gmail.svg"
-          />
+          {props.socials.map(social => (
+            <SocialListItem
+              key={social.name}
+              href={social.href}
+              name={social.name}
+              imgSrc={social.imgSrc}
+            />
+          ))}
         </SocialList>
       </Section>
 
@@ -105,6 +99,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     props: {
       skills: config.skills,
       portfolios: config.portfolios,
+      socials: config.socials,
     },
   };
 };
