@@ -63,12 +63,6 @@ const Home: React.FC<Props> = (props: Props) => {
         <User socials={socials}/>
       </Section>
 
-      <ul className={styles.menu}>
-        <li><Link className={styles.menuLink} to='skills'>Skills</Link></li>
-        <li><Link className={styles.menuLink} to='portfolios'>Portfolios</Link></li>
-        <li><Link className={styles.menuLink} to='history'>History</Link></li>
-      </ul>
-
       <Divider id='skills'/>
 
       <Section title='Skills'>

@@ -12,7 +12,10 @@ export const Link: React.FC<Props> = (props: Props) => {
     <ScrollLink
       className={props.className}
       smooth
+      spy
+      activeClass='active'
       to={props.to}
+      offset={-80}
       duration={500}
     >
       {props.children}

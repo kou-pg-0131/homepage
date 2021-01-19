@@ -1,4 +1,5 @@
 import React from 'react';
+import './_app.module.scss';
 import { AppProps } from 'next/app';
 import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 
@@ -7,7 +8,8 @@ const theme = createMuiTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          fontFamily: 'Raleway, sans-serif',
+          fontFamily: '"Open Sans", sans-serif',
+          letterSpacing: 1,
         },
         a: {
           color: '#000',
