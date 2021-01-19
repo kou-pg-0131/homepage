@@ -18,42 +18,21 @@ const socials = [
   },
 ];
 
-const portfolios = [
-  {
-    category: 'Web Services',
-    items: [
-      {
-        title: 'Nojov',
-        description: 'プログラミング言語ごとの求人数を一覧で見ることができるサービスです。',
-        imgSrc: '/images/portfolios/nojov.png',
-        url: 'https://nojov.kou-pg.com',
-        githubUrl: 'https://github.com/kou-pg-0131/nojov-ui',
-      },
-      {
-        title: 'LGTM Generator',
-        description: 'シンプルな LGTM 画像生成サービスです。',
-        imgSrc: '/images/portfolios/lgtm-generator.png',
-        url: 'https://lgtm-generator.kou-pg.com',
-        githubUrl: 'https://github.com/kou-pg-0131/lgtm-generator-ui',
-      },
-    ],
-  },
-  {
-    category: 'Tools',
-    items: [
-      {
-        title: 'docker-tags',
-        description: '特定の Docker イメージのタグ一覧を取得して出力する CLI ツールです。',
-        githubUrl: 'https://github.com/kou-pg-0131/docker-tags',
-      },
-    ],
-  },
-];
-
 type Props = {
   skills: {
     category: string;
     items: Skill[];
+  }[];
+
+  portfolios: {
+    category: string;
+    items: {
+      title: string;
+      description: string;
+      imgSrc?: string;
+      url?: string;
+      githubUrl: string;
+    }[];
   }[];
 };
 
@@ -78,7 +57,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
-        {portfolios.map(portfolio => (
+        {props.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
             <h3 className={styles.category}>{portfolio.category}</h3>
             <PortfolioCardList portfolios={portfolio.items}/>
@@ -105,6 +84,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
       skills: config.skills,
+      portfolios: config.portfolios,
     },
   };
 };

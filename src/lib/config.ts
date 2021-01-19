@@ -10,6 +10,17 @@ export type Config = {
       href: string;
     }[];
   }[];
+
+  portfolios: {
+    category: string;
+    items: {
+      title: string;
+      description: string;
+      imgSrc?: string;
+      url?: string;
+      githubUrl: string;
+    }[];
+  }[];
 };
 
 export const getConfig = (): Config => {

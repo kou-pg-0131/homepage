@@ -116,3 +116,22 @@ skills:
       - name: jQuery
         imgSrc: /images/skills/jquery.svg
         href: https://jquery.com/
+
+portfolios:
+  - category: Web Services
+    items:
+      - title: Nojov
+        description: プログラミング言語ごとの求人数の一覧をチャート形式で見ることができるサービス。
+        imgSrc: /images/portfolios/nojov.png
+        url: https://nojov.kou-pg.com
+        githubUrl: https://github.com/kou-pg-0131/nojov-ui
+      - title: LGTM Generator
+        description: シンプルな LGTM 画像生成サービス。
+        imgSrc: /images/portfolios/lgtm-generator.png
+        url: https://lgtm-generator.kou-pg.com
+        githubUrl: https://github.com/kou-pg-0131/lgtm-generator-ui
+  - category: Tools
+    items:
+      - title: docker-tags
+        description: 特定の Docker イメージのタグ一覧を取得して出力する CLI ツール。
+        githubUrl: https://github.com/kou-pg-0131/docker-tags
