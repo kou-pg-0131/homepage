@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { ExternalLink } from '..';
-import { Card, CardHeader, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
+import { Avatar, Card, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
+import { AvatarGroup } from '@material-ui/lab';
 import { Portfolio } from '../../domain';
 
 type Props = {
@@ -22,8 +23,15 @@ export const PortfolioCardListItem: React.FC<Props> = (props: Props) => {
             </ExternalLink>
           </CardActionArea>
         )}
-        <CardHeader title={props.portfolio.title} titleTypographyProps={{ className: styles.title }}/>
         <CardContent className={styles.content}>
+          <h4 className={styles.title}>{props.portfolio.title}</h4>
+          <AvatarGroup className={styles.avatarGroup} max={100}>
+            {props.portfolio.skills.sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
+              <ExternalLink key={skill.name} className={styles.avatarLink} href={skill.href}>
+                <Avatar className={styles.avatar} imgProps={{ className: styles.avatarImg }} src={skill.imgSrc} alt={skill.name}/>
+              </ExternalLink>
+            ))}
+          </AvatarGroup>
           <p>{props.portfolio.description}</p>
           <ExternalLink className={styles.githubLink} href={props.portfolio.githubUrl}>
             View on GitHub

@@ -134,33 +134,199 @@ skills:
 portfolios:
   - category: Web Services
     items:
+      - title: Koki Sato
+        description: このサイト。
+        imgSrc: /images/portfolios/homepage.png
+        url: https://kou-pg.com
+        githubUrl: https://github.com/kou-pg-0131/homepage
+        skills:
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Node.js
+            imgSrc: /images/skills/nodejs.svg
+            href: https://nodejs.org/en/
+          - name: TypeScript
+            imgSrc: /images/skills/typescript.svg
+            href: https://www.typescriptlang.org/
+          - name: Material-UI
+            imgSrc: /images/skills/material-ui.svg
+            href: https://material-ui.com/
+          - name: Next.js
+            imgSrc: /images/skills/nextjs.svg
+            href: https://nextjs.org/
+          - name: Vercel
+            imgSrc: /images/skills/vercel.svg
+            href: https://vercel.com
+          - name: Sass
+            imgSrc: /images/skills/sass.svg
+            href: https://sass-lang.com/
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
       - title: Nojov
         description: プログラミング言語ごとの求人数の一覧をチャート形式で見ることができるサービス。
         imgSrc: /images/portfolios/nojov.png
         url: https://nojov.kou-pg.com
         githubUrl: https://github.com/kou-pg-0131/nojov-ui
+        skills:
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
+          - name: AWS
+            imgSrc: /images/skills/aws.svg
+            href: https://aws.amazon.com
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Node.js
+            imgSrc: /images/skills/nodejs.svg
+            href: https://nodejs.org/en/
+          - name: TypeScript
+            imgSrc: /images/skills/typescript.svg
+            href: https://www.typescriptlang.org/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
+          - name: Serverless
+            imgSrc: /images/skills/serverless.svg
+            href: https://www.serverless.com/
+          - name: Terraform
+            imgSrc: /images/skills/terraform.svg
+            href: https://www.terraform.io/
+          - name: Webpack
+            imgSrc: /images/skills/webpack.svg
+            href: https://webpack.js.org/
+          - name: Material-UI
+            imgSrc: /images/skills/material-ui.svg
+            href: https://material-ui.com/
+
       - title: LGTM Generator
         description: シンプルな LGTM 画像生成サービス。
         imgSrc: /images/portfolios/lgtm-generator.png
         url: https://lgtm-generator.kou-pg.com
         githubUrl: https://github.com/kou-pg-0131/lgtm-generator-ui
+        skills:
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
+          - name: GCP
+            imgSrc: /images/skills/gcp.svg
+            href: https://console.cloud.google.com
+          - name: AWS
+            imgSrc: /images/skills/aws.svg
+            href: https://aws.amazon.com
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Node.js
+            imgSrc: /images/skills/nodejs.svg
+            href: https://nodejs.org/en/
+          - name: TypeScript
+            imgSrc: /images/skills/typescript.svg
+            href: https://www.typescriptlang.org/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
+          - name: Serverless
+            imgSrc: /images/skills/serverless.svg
+            href: https://www.serverless.com/
+          - name: Terraform
+            imgSrc: /images/skills/terraform.svg
+            href: https://www.terraform.io/
+          - name: Webpack
+            imgSrc: /images/skills/webpack.svg
+            href: https://webpack.js.org/
+          - name: Material-UI
+            imgSrc: /images/skills/material-ui.svg
+            href: https://material-ui.com/
+          - name: Vercel
+            imgSrc: /images/skills/vercel.svg
+            href: https://vercel.com
+
   - category: Tools
     items:
       - title: Qiita LGTM Ranking
         description: Qiita の LGTM ランキング記事を毎日自動更新するシステム。
         githubUrl: https://github.com/kou-pg-0131/qiita-lgtm-ranking
+        skills:
+          - name: Go
+            imgSrc: /images/skills/go.svg
+            href: https://golang.org/
+          - name: AWS
+            imgSrc: /images/skills/aws.svg
+            href: https://aws.amazon.com
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
+          - name: Serverless
+            imgSrc: /images/skills/serverless.svg
+            href: https://www.serverless.com/
+
       - title: AWS Cost Notifier
         description: AWS の月間費用を毎朝 Slack に通知するシステム。
         githubUrl: https://github.com/kou-pg-0131/aws-cost-notifier
+        skills:
+          - name: Go
+            imgSrc: /images/skills/go.svg
+            href: https://golang.org/
+          - name: AWS
+            imgSrc: /images/skills/aws.svg
+            href: https://aws.amazon.com
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
+          - name: Serverless
+            imgSrc: /images/skills/serverless.svg
+            href: https://www.serverless.com/
       - title: circleci-env
         description: CircleCI プロジェクトの環境変数をローカルの .env で管理する CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/circleci-env
+        skills:
+          - name: Go
+            imgSrc: /images/skills/go.svg
+            href: https://golang.org/
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
       - title: s3fzf
         description: S3 のオブジェクトを fzf ライクに検索して操作することができる CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/s3fzf
+        skills:
+          - name: Go
+            imgSrc: /images/skills/go.svg
+            href: https://golang.org/
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: AWS
+            imgSrc: /images/skills/aws.svg
+            href: https://aws.amazon.com
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
       - title: docker-tags
         description: 特定の Docker イメージのタグ一覧を取得して出力する CLI ツール。
         githubUrl: https://github.com/kou-pg-0131/docker-tags
+        skills:
+          - name: Go
+            imgSrc: /images/skills/go.svg
+            href: https://golang.org/
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Docker
+            imgSrc: /images/skills/docker.svg
+            href: https://www.docker.com/
 
 histories:
   - period: 2019-07 - now

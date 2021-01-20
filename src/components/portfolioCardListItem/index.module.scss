@@ -14,12 +14,32 @@
   }
 }
 
+.avatarGroup {
+  margin-bottom: 8px;
+}
+
+.avatarLink {
+  border: 1px solid #ddd !important;
+  border-radius: 50%;
+}
+
+.avatar {
+  background-color: #fff;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.avatarImg {
+  object-fit: fill !important;
+}
+
 .content {
   padding-top: 0 !important;
 }
 
 .title {
-  letter-spacing: 1px !important;
+  font-size: 22px;
+  margin: 7px 0;
 }
 
 .description {
