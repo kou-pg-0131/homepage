@@ -29,7 +29,7 @@ export default class Document extends NextDocument {
           <meta property="og:title"       content="Koki Sato"/>
           <meta property="og:description" content=""/>
           <meta property="og:url"         content="https://kou-pg.com"/>
-          <meta property="og:image"       content="https://kou-pg.com/images/profile.png"/>
+          <meta property="og:image"       content="https://kou-pg.com/images/profile.jpg"/>
           <meta property="og:type"        content="website"/>
           <meta property="og:locale"      content="ja_JP"/>
           <meta property="twitter:card"   content="summary"/>
