@@ -8,3 +8,5 @@ export * from './portfolioCardList';
 export * from './portfolioCardListItem';
 export * from './socialList';
 export * from './socialListItem';
+export * from './historyList';
+export * from './historyListItem';
