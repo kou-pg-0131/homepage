@@ -134,12 +134,45 @@ skills:
 portfolios:
   - category: Web Services
     items:
+      - title: Koki Sato
+        description: このサイト。
+        imgSrc: /images/portfolios/homepage.png
+        url: https://kou-pg.com
+        githubUrl: https://github.com/kou-pg-0131/homepage
+        skills:
+          - name: CircleCI
+            imgSrc: /images/skills/circleci.svg
+            href: https://circleci.com/
+          - name: Node.js
+            imgSrc: /images/skills/nodejs.svg
+            href: https://nodejs.org/en/
+          - name: TypeScript
+            imgSrc: /images/skills/typescript.svg
+            href: https://www.typescriptlang.org/
+          - name: Material-UI
+            imgSrc: /images/skills/material-ui.svg
+            href: https://material-ui.com/
+          - name: Next.js
+            imgSrc: /images/skills/nextjs.svg
+            href: https://nextjs.org/
+          - name: Vercel
+            imgSrc: /images/skills/vercel.svg
+            href: https://vercel.com
+          - name: Sass
+            imgSrc: /images/skills/sass.svg
+            href: https://sass-lang.com/
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
       - title: Nojov
         description: プログラミング言語ごとの求人数の一覧をチャート形式で見ることができるサービス。
         imgSrc: /images/portfolios/nojov.png
         url: https://nojov.kou-pg.com
         githubUrl: https://github.com/kou-pg-0131/nojov-ui
         skills:
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
           - name: AWS
             imgSrc: /images/skills/aws.svg
             href: https://aws.amazon.com
@@ -174,6 +207,12 @@ portfolios:
         url: https://lgtm-generator.kou-pg.com
         githubUrl: https://github.com/kou-pg-0131/lgtm-generator-ui
         skills:
+          - name: React
+            imgSrc: /images/skills/react.svg
+            href: https://reactjs.org/
+          - name: GCP
+            imgSrc: /images/skills/gcp.svg
+            href: https://console.cloud.google.com
           - name: AWS
             imgSrc: /images/skills/aws.svg
             href: https://aws.amazon.com
@@ -201,6 +240,9 @@ portfolios:
           - name: Material-UI
             imgSrc: /images/skills/material-ui.svg
             href: https://material-ui.com/
+          - name: Vercel
+            imgSrc: /images/skills/vercel.svg
+            href: https://vercel.com
 
   - category: Tools
     items:
