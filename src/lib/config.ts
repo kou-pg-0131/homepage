@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as yaml from 'js-yaml';
-import { Social, Skill, Portfolio } from '../domain';
+import { Social, Skill, Portfolio, History } from '../domain';
 
 export type Config = {
   socials: Social[];
@@ -14,6 +14,8 @@ export type Config = {
     category: string;
     items: Portfolio[];
   }[];
+
+  histories: History[];
 };
 
 export const getConfig = (): Config => {

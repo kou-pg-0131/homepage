@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
-import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, User } from '../components';
+import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, HistoryList, HistoryListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
 import { Config, getConfig } from '../lib/config';
 
@@ -64,11 +64,16 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='history'/>
 
       <Section title='History'>
-        <div style={{ textAlign: 'center', color: 'red' }}>
-          <strong>
-            WIP
-          </strong>
-        </div>
+        <HistoryList>
+          {props.config.histories.map((history, i) => (
+            <HistoryListItem
+              key={history.title}
+              active={i === 0}
+              hideConnector={i === props.config.histories.length - 1}
+              history={history}
+            />
+          ))}
+        </HistoryList>
       </Section>
     </Layout>
   );

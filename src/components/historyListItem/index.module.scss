@@ -1,0 +1,25 @@
+@media screen and (max-width: 599px) {
+  .item {
+    flex-direction: row !important;
+
+    &::before {
+      flex: 0 !important;
+    }
+  }
+}
+
+.timelineContent {
+  text-align: left !important;
+}
+
+.period {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 14px;
+}
