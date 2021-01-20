@@ -4,21 +4,10 @@ import { GetStaticProps } from 'next';
 import { Layout } from '../layout';
 import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
-import { Skill, Social, Portfolio } from '../domain';
-import { getConfig } from '../lib/config';
+import { Config, getConfig } from '../lib/config';
 
 type Props = {
-  socials: Social[];
-
-  skills: {
-    category: string;
-    items: Skill[];
-  }[];
-
-  portfolios: {
-    category: string;
-    items: Portfolio[];
-  }[];
+  config: Config;
 };
 
 const Home: React.FC<Props> = (props: Props) => {
@@ -27,7 +16,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Section>
         <User name='Koki Sato' imgSrc='/images/profile.png'/>
         <SocialList>
-          {props.socials.map(social => (
+          {props.config.socials.map(social => (
             <SocialListItem
               key={social.name}
               social={social}
@@ -39,7 +28,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='skills'/>
 
       <Section title='Skills'>
-        {props.skills.map(item => (
+        {props.config.skills.map(item => (
           <React.Fragment key={item.category}>
             <h3 className={styles.category}>{item.category}</h3>
             <SkillCardList>
@@ -57,7 +46,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
-        {props.portfolios.map(portfolio => (
+        {props.config.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
             <h3 className={styles.category}>{portfolio.category}</h3>
             <PortfolioCardList>
@@ -90,9 +79,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
   return {
     props: {
-      skills: config.skills,
-      portfolios: config.portfolios,
-      socials: config.socials,
+      config,
     },
   };
 };
