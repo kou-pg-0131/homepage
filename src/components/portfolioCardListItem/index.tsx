@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { ExternalLink } from '..';
-import { Avatar, Card, CardHeader, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
+import { Avatar, Card, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import { AvatarGroup } from '@material-ui/lab';
 import { Portfolio } from '../../domain';
 
