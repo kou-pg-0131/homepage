@@ -61,6 +61,8 @@ export const Portfolio = {
   qiitaLgtmRanking: {
     title: 'Qiita LGTM Ranking',
     description: 'Qiita の LGTM ランキング記事を毎日自動更新するシステム。',
+    imgSrc: null,
+    url: null,
     githubUrl: 'https://github.com/kou-pg-0131/qiita-lgtm-ranking',
     skills: [
       Skill.go,
@@ -73,6 +75,8 @@ export const Portfolio = {
   awsCostNotifier: {
     title: 'AWS Cost Notifier',
     description: 'AWS の月間費用を毎朝 Slack に通知するシステム。',
+    imgSrc: null,
+    url: null,
     githubUrl: 'https://github.com/kou-pg-0131/aws-cost-notifier',
     skills: [
       Skill.go,
@@ -85,6 +89,8 @@ export const Portfolio = {
   circleEnv: {
     title: 'circleci-env',
     description: 'CircleCI プロジェクトの環境変数をローカルの .env で管理する CLI ツール。',
+    imgSrc: null,
+    url: null,
     githubUrl: 'https://github.com/kou-pg-0131/circleci-env',
     skills: [
       Skill.go,
@@ -95,6 +101,8 @@ export const Portfolio = {
   s3fzf: {
     title: 's3fzf',
     description: 'S3 のオブジェクトを fzf ライクに検索して操作することができる CLI ツール。',
+    imgSrc: null,
+    url: null,
     githubUrl: 'https://github.com/kou-pg-0131/s3fzf',
     skills: [
       Skill.go,
@@ -106,6 +114,8 @@ export const Portfolio = {
   dockerTags: {
     title: 'docker-tags',
     description: '特定の Docker イメージのタグ一覧を取得して出力する CLI ツール。',
+    imgSrc: null,
+    url: null,
     githubUrl: 'https://github.com/kou-pg-0131/docker-tags',
     skills: [
       Skill.go,
