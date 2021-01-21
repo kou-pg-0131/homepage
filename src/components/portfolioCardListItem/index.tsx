@@ -3,7 +3,7 @@ import styles from './index.module.scss';
 import { ExternalLink } from '..';
 import { Avatar, Card, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import { AvatarGroup } from '@material-ui/lab';
-import { Portfolio } from '../../domain';
+import { Portfolio, Skill } from '../../domain';
 
 type Props = {
   portfolio: Portfolio;
@@ -26,7 +26,7 @@ export const PortfolioCardListItem: React.FC<Props> = (props: Props) => {
         <CardContent className={styles.content}>
           <h4 className={styles.title}>{props.portfolio.title}</h4>
           <AvatarGroup className={styles.avatarGroup} max={100}>
-            {props.portfolio.skills.sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
+            {(props.portfolio.skills as unknown as Skill[]).sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
               <ExternalLink key={skill.name} className={styles.avatarLink} href={skill.href}>
                 <Avatar className={styles.avatar} imgProps={{ className: styles.avatarImg }} src={skill.imgSrc} alt={skill.name}/>
               </ExternalLink>
