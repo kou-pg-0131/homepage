@@ -1,4 +1,4 @@
-import { Skill, Social, Portfolio } from './domain';
+import { Skill, Social, Portfolio, History } from './domain';
 
 type Config = {
   socials: Social[];
@@ -12,6 +12,8 @@ type Config = {
     category: string;
     items: Portfolio[];
   }[];
+
+  histories: History[];
 };
 
 const config: Config = {
@@ -103,6 +105,8 @@ const config: Config = {
       ],
     },
   ],
+
+  histories: Object.values(History),
 };
 
 export default config;
