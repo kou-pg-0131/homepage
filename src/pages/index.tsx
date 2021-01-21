@@ -17,7 +17,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Section>
         <User name='Koki Sato' imgSrc='/images/profile.png'/>
         <SocialList>
-          {props.config.socials.map(social => (
+          {config.socials.map(social => (
             <SocialListItem
               key={social.name}
               social={social}
