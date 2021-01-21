@@ -1,4 +1,4 @@
-import { Skill, Social } from './domain';
+import { Skill, Social, Portfolio } from './domain';
 
 type Config = {
   socials: Social[];
@@ -6,6 +6,11 @@ type Config = {
   skills: {
     category: string;
     items: Skill[];
+  }[];
+
+  portfolios: {
+    category: string;
+    items: Portfolio[];
   }[];
 };
 
@@ -75,6 +80,26 @@ const config: Config = {
         Skill.materialui,
         Skill.bootstrap,
         Skill.jquery,
+      ],
+    },
+  ],
+  portfolios: [
+    {
+      category: 'Web Services',
+      items: [
+        Portfolio.homepage,
+        Portfolio.nojov,
+        Portfolio.lgtmGenerator,
+      ],
+    },
+    {
+      category: 'Tools',
+      items: [
+        Portfolio.qiitaLgtmRanking,
+        Portfolio.awsCostNotifier,
+        Portfolio.circleEnv,
+        Portfolio.s3fzf,
+        Portfolio.dockerTags,
       ],
     },
   ],

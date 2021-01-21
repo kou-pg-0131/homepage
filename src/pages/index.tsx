@@ -47,7 +47,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
-        {props.config.portfolios.map(portfolio => (
+        {config.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
             <h3 className={styles.category}>{portfolio.category}</h3>
             <PortfolioCardList>
