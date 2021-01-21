@@ -5,6 +5,7 @@ import { Layout } from '../layout';
 import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, HistoryList, HistoryListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
 import { Config, getConfig } from '../lib/config';
+import config from '../config';
 
 type Props = {
   config: Config;
@@ -28,7 +29,7 @@ const Home: React.FC<Props> = (props: Props) => {
       <Divider id='skills'/>
 
       <Section title='Skills'>
-        {props.config.skills.map(item => (
+        {config.skills.map(item => (
           <React.Fragment key={item.category}>
             <h3 className={styles.category}>{item.category}</h3>
             <SkillCardList>
