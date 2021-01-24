@@ -20,7 +20,7 @@ const config: Config = {
   socials: Object.values(Social),
   skills: [
     {
-      category: 'Languages',
+      category: 'Language',
       items: [
         Skill.go,
         Skill.ruby,
@@ -34,7 +34,7 @@ const config: Config = {
       ],
     },
     {
-      category: 'Frameworks',
+      category: 'Framework/Library',
       items: [
         Skill.gin,
         Skill.rails,
@@ -42,6 +42,7 @@ const config: Config = {
         Skill.nextjs,
         Skill.jekyll,
         Skill.dotnet,
+        Skill.jquery,
       ],
     },
     {
@@ -81,7 +82,6 @@ const config: Config = {
         Skill.packer,
         Skill.materialui,
         Skill.bootstrap,
-        Skill.jquery,
       ],
     },
   ],
