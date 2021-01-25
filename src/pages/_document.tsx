@@ -25,6 +25,8 @@ export default class Document extends NextDocument {
             </React.Fragment>
           )}
 
+          <script data-ad-client="ca-pub-7234657692649543" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
           <meta property="og:site_name"   content="Koki Sato"/>
           <meta property="og:title"       content="Koki Sato"/>
           <meta property="og:description" content=""/>
