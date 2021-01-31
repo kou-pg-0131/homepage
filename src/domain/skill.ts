@@ -174,6 +174,11 @@ export const Skill = {
     imgSrc: '/images/skills/jquery.svg',
     href: 'https://jquery.com/',
   },
+  semanticui: {
+    name: 'Semantic UI',
+    imgSrc: '/images/skills/semantic-ui.svg',
+    href: 'https://semantic-ui.com/',
+  },
 } as const;
 
 export type Skill = typeof Skill[keyof typeof Skill];

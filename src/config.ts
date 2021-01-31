@@ -82,6 +82,7 @@ const config: Config = {
         Skill.packer,
         Skill.materialui,
         Skill.bootstrap,
+        Skill.semanticui,
       ],
     },
   ],
