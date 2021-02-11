@@ -55,7 +55,6 @@ export const Portfolio = {
       Skill.terraform,
       Skill.webpack,
       Skill.materialui,
-      Skill.vercel,
     ],
   },
   qiitaLgtmRanking: {
