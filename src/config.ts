@@ -105,6 +105,12 @@ const config: Config = {
         Portfolio.dockerTags,
       ],
     },
+    {
+      category: 'Chrome Extension',
+      items: [
+        Portfolio.clientInfoViewer,
+      ],
+    },
   ],
 
   histories: Object.values(History),

@@ -122,6 +122,20 @@ export const Portfolio = {
       Skill.docker,
     ],
   },
+  clientInfoViewer: {
+    title: 'Client Info Viewer',
+    description: 'IP アドレス、 Cookie 等のクライアント情報を表示する機能。',
+    imgSrc: null,
+    url: null,
+    githubUrl: 'https://github.com/kou-pg-0131/client-info-viewer',
+    skills: [
+      Skill.circleci,
+      Skill.materialui,
+      Skill.webpack,
+      Skill.typescript,
+      Skill.react,
+    ],
+  },
 } as const;
 
 export type Portfolio = typeof Portfolio[keyof typeof Portfolio];
