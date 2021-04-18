@@ -8,20 +8,14 @@ const useStyles = makeStyles((theme: Theme) =>
     footer: {
       alignItems: 'center',
       display: 'flex',
+      flexDirection: 'column',
       justifyContent: 'center',
       padding: theme.spacing(2),
-      flexDirection: 'column',
     },
     listItem: {
       fontSize: 12,
-      marginBottom: 4,
+      marginBottom: theme.spacing(1),
       textAlign: 'center',
-    },
-    link: {
-      transition: '0.2s',
-      '&:hover': {
-        opacity: 0.5,
-      },
     },
   }),
 );
@@ -36,11 +30,11 @@ export const Footer: React.VFC = () => {
       </small>
       <ul>
         <li className={classes.listItem}>
-          <ExternalLink className={classes.link} href='https://github.com/kou-pg-0131/homepage'>View on GitHub</ExternalLink>
+          <ExternalLink href='https://github.com/kou-pg-0131/homepage'>View on GitHub</ExternalLink>
         </li>
         <li className={classes.listItem}>
           <Link href='/privacyPolicy'>
-            <a className={classes.link} href='https://github.com/kou-pg-0131/homepage'>プライバシーポリシー</a>
+            <a>プライバシーポリシー</a>
           </Link>
         </li>
       </ul>
