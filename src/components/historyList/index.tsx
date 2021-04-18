@@ -1,14 +1,24 @@
 import React from 'react';
-import styles from './index.module.scss';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { Timeline } from '@material-ui/lab';
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    timeline: {
+      padding: 0,
+    },
+  }),
+);
 
 type Props = {
   children: React.ReactNode;
 };
 
 export const HistoryList: React.VFC<Props> = (props: Props) => {
+  const classes = useStyles();
+
   return (
-    <Timeline className={styles.root} align='alternate'>
+    <Timeline className={classes.timeline} align='alternate'>
       {props.children}
     </Timeline>
   );
