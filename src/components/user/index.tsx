@@ -6,7 +6,7 @@ type Props = {
   imgSrc: string;
 };
 
-export const User: React.FC<Props> = (props: Props) => {
+export const User: React.VFC<Props> = (props: Props) => {
   return (
     <div className={styles.root}>
       <div className={styles.user}>

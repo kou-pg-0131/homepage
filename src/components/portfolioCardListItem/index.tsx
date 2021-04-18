@@ -9,7 +9,7 @@ type Props = {
   portfolio: Portfolio;
 };
 
-export const PortfolioCardListItem: React.FC<Props> = (props: Props) => {
+export const PortfolioCardListItem: React.VFC<Props> = (props: Props) => {
   return (
     <Grid item xs={12}>
       <Card raised>

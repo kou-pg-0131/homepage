@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const Section: React.FC<Props> = (props: Props) => {
+export const Section: React.VFC<Props> = (props: Props) => {
   return (
     <section className={styles.root}>
       <Container maxWidth='md'>

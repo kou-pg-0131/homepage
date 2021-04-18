@@ -5,7 +5,7 @@ import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, S
 import { Divider } from '@material-ui/core';
 import config from '../config';
 
-const Home: React.FC = () => {
+const Home: React.VFC = () => {
   return (
     <Layout>
       <Section>

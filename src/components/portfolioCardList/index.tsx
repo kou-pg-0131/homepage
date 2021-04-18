@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const PortfolioCardList: React.FC<Props> = (props: Props) => {
+export const PortfolioCardList: React.VFC<Props> = (props: Props) => {
   return (
     <Grid container className={styles.root} spacing={4}>
       {props.children}

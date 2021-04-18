@@ -10,7 +10,7 @@ type Props = {
   history: History;
 };
 
-export const HistoryListItem: React.FC<Props> = (props: Props) => {
+export const HistoryListItem: React.VFC<Props> = (props: Props) => {
 
   return (
     <TimelineItem className={styles.item}>

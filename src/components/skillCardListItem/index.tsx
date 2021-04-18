@@ -8,7 +8,7 @@ type Props = {
   skill: Skill;
 };
 
-export const SkillCardListItem: React.FC<Props> = (props: Props) => {
+export const SkillCardListItem: React.VFC<Props> = (props: Props) => {
   return (
     <Grid item xs={6} sm={3}>
       <ExternalLink className={styles.link} href={props.skill.href}>

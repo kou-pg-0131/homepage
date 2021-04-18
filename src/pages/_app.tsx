@@ -32,7 +32,7 @@ const theme = createMuiTheme({
   },
 });
 
-const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const App: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   useEffect(() => {

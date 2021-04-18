@@ -9,7 +9,7 @@ type Props = {
   hideMenu: boolean;
 };
 
-export const Header: React.FC<Props> = (props: Props) => {
+export const Header: React.VFC<Props> = (props: Props) => {
   const [openSideMenu, setOpenSideMenu] = useState<boolean>(false);
 
   const handleClickSideMenuItem = () => {

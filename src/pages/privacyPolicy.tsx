@@ -3,7 +3,7 @@ import styles from './privacyPolicy.module.scss';
 import { Layout } from '../layout';
 import { ExternalLink, Section } from '../components';
 
-const PrivacyPolicy: React.FC = () => {
+const PrivacyPolicy: React.VFC = () => {
   const items = [
     {
       title: '免責事項',

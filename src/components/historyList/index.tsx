@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const HistoryList: React.FC<Props> = (props: Props) => {
+export const HistoryList: React.VFC<Props> = (props: Props) => {
   return (
     <Timeline className={styles.root} align='alternate'>
       {props.children}

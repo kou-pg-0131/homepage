@@ -7,7 +7,7 @@ type Props = {
   social: Social;
 };
 
-export const SocialListItem: React.FC<Props> = (props: Props) => {
+export const SocialListItem: React.VFC<Props> = (props: Props) => {
   return (
     <li className={styles.listItem}>
       <ExternalLink className={styles.link} href={props.social.href}>

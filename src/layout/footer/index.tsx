@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './index.module.scss';
 import { ExternalLink } from '../../components';
 
-export const Footer: React.FC = () => {
+export const Footer: React.VFC = () => {
   return (
     <footer className={styles.footer}>
       <small>

@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const SocialList: React.FC<Props> = (props: Props) => {
+export const SocialList: React.VFC<Props> = (props: Props) => {
   return (
     <ul className={styles.list}>
       {props.children}

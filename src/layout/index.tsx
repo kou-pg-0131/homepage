@@ -10,7 +10,7 @@ type Props = {
   hideMenu?: boolean;
 };
 
-export const Layout: React.FC<Props> = (props: Props) => {
+export const Layout: React.VFC<Props> = (props: Props) => {
   return (
     <React.Fragment>
       <Head>

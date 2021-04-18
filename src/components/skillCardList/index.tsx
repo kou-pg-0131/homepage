@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const SkillCardList: React.FC<Props> = (props: Props) => {
+export const SkillCardList: React.VFC<Props> = (props: Props) => {
   return (
     <Grid container spacing={2}>
       {props.children}
