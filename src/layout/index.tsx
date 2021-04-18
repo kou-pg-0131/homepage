@@ -14,21 +14,26 @@ const theme = createMuiTheme({
           letterSpacing: 1,
         },
         a: {
-          color: '#000',
+          color: '#000000',
           cursor: 'pointer',
           textDecoration: 'none',
-        },
-        img: {
-          maxWidth: '100%',
-        },
-        p: {
-          marginTop: 0,
+          transition: '0.2s',
+          '&:hover': {
+            opacity: 0.5,
+          },
         },
         ul: {
           listStyleType: 'none',
           padding: 0,
         },
       },
+    },
+  },
+  palette: {
+    primary: {
+      main: '#FFFFFF',
+      dark: '#FAFAFA',
+      contrastText: '#000000',
     },
   },
 });
