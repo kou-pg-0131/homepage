@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: 'center',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
       padding: theme.spacing(2),
     },
     listItem: {
