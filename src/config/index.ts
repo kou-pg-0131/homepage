@@ -1,6 +1,9 @@
-import { Skill, Portfolio, History } from './domain';
+import { Social as SocialType, Skill, Portfolio, History } from '../domain';
+import { Social } from './socials';
 
 type Config = {
+  socials: SocialType[];
+
   skills: {
     category: string;
     items: Skill[];
@@ -15,6 +18,8 @@ type Config = {
 };
 
 const config: Config = {
+  socials: Object.values(Social),
+
   skills: [
     {
       category: 'Language',

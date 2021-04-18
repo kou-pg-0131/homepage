@@ -17,34 +17,11 @@ const useStyles = makeStyles(() =>
 const Home: React.VFC = () => {
   const classes = useStyles();
 
-  const socials = [
-    {
-      href: 'https://github.com/kou-pg-0131',
-      name: 'GitHub',
-      imgSrc: '/images/socials/github.svg',
-    },
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/kou_pg_0131',
-      imgSrc: '/images/socials/twitter.svg',
-    },
-    {
-      name: 'Zenn',
-      href: 'https://zenn.dev/kou_pg_0131',
-      imgSrc: '/images/socials/zenn.svg',
-    },
-    {
-      name: 'Gmail',
-      href: 'mailto:kou.pg.0131@gmail.com',
-      imgSrc: '/images/socials/gmail.svg',
-    },
-  ];
-
   return (
     <Layout>
       <Section>
         <User name='Koki Sato' imgSrc='/images/profile.png'/>
-        <SocialList items={socials}/>
+        <SocialList items={config.socials}/>
       </Section>
 
       <Divider id='skills'/>
