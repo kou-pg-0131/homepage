@@ -1,17 +1,26 @@
 import React from 'react';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import { Social } from '../domain';
+import { ExternalLink } from '.';
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     list: {
       display: 'flex',
       justifyContent: 'center',
     },
+    listItem: {
+      margin: theme.spacing(2),
+    },
+    img: {
+      height: 40,
+      width: 40,
+    },
   }),
 );
 
 type Props = {
-  children: React.ReactNode;
+  items: Social[];
 };
 
 export const SocialList: React.VFC<Props> = (props: Props) => {
@@ -19,7 +28,13 @@ export const SocialList: React.VFC<Props> = (props: Props) => {
 
   return (
     <ul className={classes.list}>
-      {props.children}
+      {props.items.map(item => (
+        <li key={item.name} className={classes.listItem}>
+          <ExternalLink href={item.href}>
+            <img className={classes.img} src={item.imgSrc} alt={item.name}/>
+          </ExternalLink>
+        </li>
+      ))}
     </ul>
   );
 };
