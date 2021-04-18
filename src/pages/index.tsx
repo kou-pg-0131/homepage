@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from '../layout';
-import { SocialList, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, HistoryList, HistoryListItem, User } from '../components';
+import { SocialList, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, HistoryList, HistoryListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import config from '../config';
@@ -28,17 +28,7 @@ const Home: React.VFC = () => {
 
       <Section title='Skills'>
         {config.skillGroups.map(group => (
-          <React.Fragment key={group.name}>
-            <h3 className={classes.category}>{group.name}</h3>
-            <SkillCardList>
-              {group.skills.map(skill => (
-                <SkillCardListItem
-                  key={skill.name}
-                  skill={skill}
-                />
-              ))}
-            </SkillCardList>
-          </React.Fragment>
+          <SkillCardList key={group.name} name={group.name} skills={group.skills}/>
         ))}
       </Section>
 

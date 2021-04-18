@@ -3,7 +3,6 @@ export * from './section';
 export * from './user';
 export * from './externalLink';
 export * from './skillCardList';
-export * from './skillCardListItem';
 export * from './portfolioCardList';
 export * from './portfolioCardListItem';
 export * from './socialList';
