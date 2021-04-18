@@ -1,11 +1,22 @@
 import React from 'react';
-import styles from './index.module.scss';
 import { Layout } from '../layout';
 import { SocialList, SocialListItem, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, SkillCardListItem, HistoryList, HistoryListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import config from '../config';
 
+const useStyles = makeStyles(() =>
+  createStyles({
+    category: {
+      fontSize: 16,
+      textAlign: 'center',
+    },
+  }),
+);
+
 const Home: React.VFC = () => {
+  const classes = useStyles();
+
   return (
     <Layout>
       <Section>
@@ -25,7 +36,7 @@ const Home: React.VFC = () => {
       <Section title='Skills'>
         {config.skills.map(item => (
           <React.Fragment key={item.category}>
-            <h3 className={styles.category}>{item.category}</h3>
+            <h3 className={classes.category}>{item.category}</h3>
             <SkillCardList>
               {item.items.map(skill => (
                 <SkillCardListItem
@@ -43,7 +54,7 @@ const Home: React.VFC = () => {
       <Section title='Portfolios'>
         {config.portfolios.map(portfolio => (
           <React.Fragment key={portfolio.category}>
-            <h3 className={styles.category}>{portfolio.category}</h3>
+            <h3 className={classes.category}>{portfolio.category}</h3>
             <PortfolioCardList>
               {portfolio.items.map(item => (
                 <PortfolioCardListItem
