@@ -1,29 +1,25 @@
 import React from 'react';
+import { Box, Typography } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      fontSize: 22,
       alignItems: 'center',
       display: 'flex',
       flexDirection: 'column',
-    },
-    user: {
-      alignItems: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      marginBottom: theme.spacing(2),
     },
     name: {
-      marginBottom: 0,
+      fontSize: 22,
+      marginBottom: theme.spacing(1),
     },
     img: {
       height: 150,
       width: 150,
     },
     tagline: {
-      color: '#aaaaaa',
+      color: '#999',
+      fontSize: 20,
     },
   }),
 );
@@ -37,12 +33,10 @@ export const User: React.VFC<Props> = (props: Props) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.user}>
-        <img className={classes.img} src='/images/profile.png' alt={props.name}/>
-        <p className={classes.name}>Koki Sato</p>
-      </div>
-      <p className={classes.tagline}>Developer</p>
-    </div>
+    <Box className={classes.root}>
+      <img className={classes.img} src={props.imgSrc} alt={props.name}/>
+      <Typography className={classes.name}>{props.name}</Typography>
+      <Typography className={classes.tagline}>Developer</Typography>
+    </Box>
   );
 };
