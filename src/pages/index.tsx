@@ -27,11 +27,11 @@ const Home: React.VFC = () => {
       <Divider id='skills'/>
 
       <Section title='Skills'>
-        {config.skills.map(item => (
-          <React.Fragment key={item.category}>
-            <h3 className={classes.category}>{item.category}</h3>
+        {config.skillGroups.map(group => (
+          <React.Fragment key={group.name}>
+            <h3 className={classes.category}>{group.name}</h3>
             <SkillCardList>
-              {item.items.map(skill => (
+              {group.skills.map(skill => (
                 <SkillCardListItem
                   key={skill.name}
                   skill={skill}
@@ -45,14 +45,14 @@ const Home: React.VFC = () => {
       <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
-        {config.portfolios.map(portfolio => (
-          <React.Fragment key={portfolio.category}>
-            <h3 className={classes.category}>{portfolio.category}</h3>
+        {config.portfolioGroups.map(group => (
+          <React.Fragment key={group.name}>
+            <h3 className={classes.category}>{group.name}</h3>
             <PortfolioCardList>
-              {portfolio.items.map(item => (
+              {group.portfolios.map(portfolio => (
                 <PortfolioCardListItem
-                  key={item.title}
-                  portfolio={item}
+                  key={portfolio.title}
+                  portfolio={portfolio}
                 />
               ))}
             </PortfolioCardList>

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 type Props = {
-  items: Social[];
+  items: Readonly<Social[]>;
 };
 
 export const SocialList: React.VFC<Props> = (props: Props) => {
