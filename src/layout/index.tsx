@@ -22,7 +22,7 @@ export const Layout: React.VFC<Props> = (props: Props) => {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>{props.title && `${props.title} | `}Koki Sato</title>
       </Head>
@@ -31,6 +31,6 @@ export const Layout: React.VFC<Props> = (props: Props) => {
         {props.children}
       </main>
       <Footer/>
-    </React.Fragment>
+    </>
   );
 };
