@@ -6,6 +6,9 @@ import { Header } from './header';
 import { Footer } from './footer';
 
 const theme = createMuiTheme({
+  typography: {
+    fontFamily: ['"Open Sans"', 'sans-serif'].join(','),
+  },
   overrides: {
     MuiCssBaseline: {
       '@global': {
