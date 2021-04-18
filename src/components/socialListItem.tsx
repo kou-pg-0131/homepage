@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { Social } from '../../domain';
-import { ExternalLink } from '..';
+import { Social } from '../domain';
+import { ExternalLink } from '.';
 
 const useStyles = makeStyles(() =>
   createStyles({

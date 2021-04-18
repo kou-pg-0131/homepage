@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, CardActionArea, CardContent, Grid } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import { ExternalLink } from '..';
-import { Skill } from '../../domain';
+import { ExternalLink } from '.';
+import { Skill } from '../domain';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

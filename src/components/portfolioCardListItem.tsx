@@ -1,9 +1,9 @@
 import React from 'react';
-import { ExternalLink } from '..';
+import { ExternalLink } from '.';
 import { Avatar, Card, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { AvatarGroup } from '@material-ui/lab';
-import { Portfolio, Skill } from '../../domain';
+import { Portfolio, Skill } from '../domain';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

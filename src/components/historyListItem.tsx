@@ -1,5 +1,5 @@
 import React from 'react';
-import { History } from '../../domain';
+import { History } from '../domain';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Card, CardContent } from '@material-ui/core';
 import { TimelineItem, TimelineSeparator, TimelineDot, TimelineContent, TimelineConnector } from '@material-ui/lab';

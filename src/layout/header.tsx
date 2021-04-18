@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Avatar, Divider, Drawer, Hidden, Container, AppBar, Toolbar, IconButton, List, ListItem } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { Menu } from '@material-ui/icons';
-import { AnchorLink } from '../../components';
+import { AnchorLink } from '../components';
 
 const useStyles = makeStyles(() =>
   createStyles({
