@@ -2,35 +2,6 @@ import React, { useEffect } from 'react';
 import './global.scss';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
-
-const theme = createMuiTheme({
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        body: {
-          fontFamily: '"Open Sans", sans-serif',
-          letterSpacing: 1,
-        },
-        a: {
-          color: '#000',
-          cursor: 'pointer',
-          textDecoration: 'none',
-        },
-        img: {
-          maxWidth: '100%',
-        },
-        p: {
-          marginTop: 0,
-        },
-        ul: {
-          listStyleType: 'none',
-          padding: 0,
-        },
-      },
-    },
-  },
-});
 
 const App: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -42,10 +13,7 @@ const App: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   }, [router.pathname]);
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Component {...pageProps}/>
-    </ThemeProvider>
+    <Component {...pageProps}/>
   );
 };
 
