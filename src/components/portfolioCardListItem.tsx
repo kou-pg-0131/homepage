@@ -41,12 +41,6 @@ const useStyles = makeStyles((theme: Theme) =>
     description: {
       marginBottom: theme.spacing(2),
     },
-    githubLink: {
-      transition: '0.2s',
-      '&:hover': {
-        opacity: 0.5,
-      },
-    },
   }),
 );
 
@@ -80,7 +74,7 @@ export const PortfolioCardListItem: React.VFC<Props> = (props: Props) => {
             ))}
           </AvatarGroup>
           <p>{props.portfolio.description}</p>
-          <ExternalLink className={classes.githubLink} href={props.portfolio.githubUrl}>
+          <ExternalLink href={props.portfolio.githubUrl}>
             View on GitHub
           </ExternalLink>
         </CardContent>
