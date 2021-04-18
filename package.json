@@ -4,6 +4,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "lint": "eslint './**/*.ts' './**/*.tsx' --max-warnings 0",
     "test:compile": "tsc --noEmit"
   },
