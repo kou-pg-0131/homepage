@@ -8,14 +8,9 @@
     "test:compile": "tsc --noEmit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
-    "js-yaml": "^4.0.0",
     "next": "^10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -24,7 +19,6 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.4",
-    "@types/node": "^14.14.21",
     "@types/react": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
