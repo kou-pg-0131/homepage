@@ -4,7 +4,6 @@ export * from './user';
 export * from './externalLink';
 export * from './skillCardList';
 export * from './portfolioCardList';
-export * from './portfolioCardListItem';
 export * from './socialList';
 export * from './historyList';
 export * from './historyListItem';

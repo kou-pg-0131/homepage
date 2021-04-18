@@ -36,17 +36,7 @@ const Home: React.VFC = () => {
 
       <Section title='Portfolios'>
         {config.portfolioGroups.map(group => (
-          <React.Fragment key={group.name}>
-            <h3 className={classes.category}>{group.name}</h3>
-            <PortfolioCardList>
-              {group.portfolios.map(portfolio => (
-                <PortfolioCardListItem
-                  key={portfolio.title}
-                  portfolio={portfolio}
-                />
-              ))}
-            </PortfolioCardList>
-          </React.Fragment>
+          <PortfolioCardList key={group.name} name={group.name} portfolios={group.portfolios}/>
         ))}
       </Section>
 
