@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme: Theme) =>
     skillLink: {
       display: 'block',
       width: '100%',
+      '&:hover': {
+        opacity: 0.9,
+      },
     },
     skillContent: {
       alignItems: 'center',
