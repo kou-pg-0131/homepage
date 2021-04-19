@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       fontSize: 28,
       fontWeight: 'bold',
+      marginBottom :theme.spacing(2),
       textAlign: 'center',
     },
   }),
