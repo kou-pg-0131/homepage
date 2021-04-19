@@ -35,6 +35,8 @@ export const Portfolio = {
       Skill.terraform,
       Skill.webpack,
       Skill.materialui,
+      Skill.vercel,
+      Skill.nextjs,
     ],
   },
   lgtmGenerator: {
@@ -53,8 +55,10 @@ export const Portfolio = {
       Skill.docker,
       Skill.serverless,
       Skill.terraform,
-      Skill.webpack,
       Skill.materialui,
+      Skill.go,
+      Skill.nextjs,
+      Skill.gin,
     ],
   },
   qiitaLgtmRanking: {
