@@ -18,8 +18,11 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down('lg')]: {
         height: 280,
       },
-      [theme.breakpoints.down('md')]: {
-        height: 200,
+      [theme.breakpoints.down('sm')]: {
+        height: 230,
+      },
+      [theme.breakpoints.down('xs')]: {
+        height: 150,
       },
     },
     avatarGroup: {
