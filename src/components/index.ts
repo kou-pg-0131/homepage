@@ -6,4 +6,3 @@ export * from './skillCardList';
 export * from './portfolioCardList';
 export * from './socialList';
 export * from './historyList';
-export * from './historyListItem';

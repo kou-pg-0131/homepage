@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from '../layout';
-import { SocialList, PortfolioCardList, Section, SkillCardList, HistoryList, HistoryListItem, User } from '../components';
+import { SocialList, PortfolioCardList, Section, SkillCardList, HistoryList, User } from '../components';
 import { Divider } from '@material-ui/core';
 import config from '../config';
 
@@ -31,16 +31,7 @@ const Home: React.VFC = () => {
       <Divider id='history'/>
 
       <Section title='History'>
-        <HistoryList>
-          {config.histories.map((history, i) => (
-            <HistoryListItem
-              key={history.title}
-              active={i === 0}
-              hideConnector={i === config.histories.length - 1}
-              history={history}
-            />
-          ))}
-        </HistoryList>
+        <HistoryList histories={config.histories}/>
       </Section>
     </Layout>
   );
