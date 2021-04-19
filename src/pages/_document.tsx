@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
         <Head>
           {/* Global site tag (gtag.js) - Google Analytics */}
           {process.env.NEXT_PUBLIC_ENV === 'production' && (
-            <React.Fragment>
+            <>
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
               <script
                 dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default class Document extends NextDocument {
                 }}
               >
               </script>
-            </React.Fragment>
+            </>
           )}
 
           <meta property="og:site_name"   content="Koki Sato"/>
