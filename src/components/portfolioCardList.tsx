@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Typography, Avatar, Card, CardContent, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import { AvatarGroup } from '@material-ui/lab';
-import { Portfolio, Skill } from '../domain';
+import { Portfolio } from '../domain';
 import { ExternalLink } from '.';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -10,11 +10,14 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       marginBottom: theme.spacing(2),
     },
-    name: {
+    groupName: {
       fontSize: 16,
       fontWeight: 'bold',
       marginBottom: theme.spacing(1),
       textAlign: 'center',
+    },
+    description: {
+      marginBottom: theme.spacing(1),
     },
     img: {
       height: 300,
@@ -29,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(2),
     },
     avatarLink: {
-      border: '1px solid #ddd !important',
+      border: '1px solid #ddd',
       borderRadius: '50%',
     },
     avatar: {
@@ -38,17 +41,17 @@ const useStyles = makeStyles((theme: Theme) =>
       width: 25,
     },
     avatarImg: {
+      height: '100%',
       objectFit: 'fill',
+      width: '100%',
     },
-    content: {
+    cardContent: {
       paddingTop: 0,
     },
     title: {
       fontSize: 22,
-      margin: '7px 0',
-    },
-    description: {
-      marginBottom: theme.spacing(2),
+      fontWeight: 'bold',
+      margin: theme.spacing(1),
     },
   }),
 );
@@ -63,7 +66,7 @@ export const PortfolioCardList: React.VFC<Props> = (props: Props) => {
 
   return (
     <>
-      <Typography className={classes.name}>{props.name}</Typography>
+      <Typography className={classes.groupName}>{props.name}</Typography>
       <Grid container className={classes.container} spacing={4}>
         {props.portfolios.map(portfolio => (
           <Grid key={portfolio.title} item xs={12}>
@@ -78,16 +81,17 @@ export const PortfolioCardList: React.VFC<Props> = (props: Props) => {
                   </ExternalLink>
                 </CardActionArea>
               )}
-              <CardContent className={classes.content}>
-                <h4 className={classes.title}>{portfolio.title}</h4>
+
+              <CardContent className={classes.cardContent}>
+                <Typography className={classes.title}>{portfolio.title}</Typography>
                 <AvatarGroup className={classes.avatarGroup} max={100}>
-                  {(portfolio.skills as unknown as Skill[]).sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
+                  {portfolio.skills.concat().sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
                     <ExternalLink key={skill.name} className={classes.avatarLink} href={skill.href}>
                       <Avatar className={classes.avatar} imgProps={{ className: classes.avatarImg }} src={skill.imgSrc} alt={skill.name}/>
                     </ExternalLink>
                   ))}
                 </AvatarGroup>
-                <p>{portfolio.description}</p>
+                <Typography className={classes.description}>{portfolio.description}</Typography>
                 <ExternalLink href={portfolio.githubUrl}>
                   View on GitHub
                 </ExternalLink>
