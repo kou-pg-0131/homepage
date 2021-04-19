@@ -8,14 +8,18 @@ export const Portfolio = {
     url: 'https://kou-pg.com',
     githubUrl: 'https://github.com/kou-pg-0131/portfolio',
     skills: [
-      Skill.circleci,
+      // language
       Skill.nodejs,
       Skill.typescript,
-      Skill.materialui,
-      Skill.nextjs,
-      Skill.vercel,
-      Skill.sass,
+      // framework/library
       Skill.react,
+      Skill.nextjs,
+      // cloud
+      Skill.vercel,
+      // ci/cd
+      Skill.circleci,
+      // other
+      Skill.materialui,
     ],
   },
   nojov: {
@@ -25,18 +29,23 @@ export const Portfolio = {
     url: 'https://nojov.kou-pg.com',
     githubUrl: 'https://github.com/kou-pg-0131/nojov-ui',
     skills: [
-      Skill.react,
-      Skill.aws,
-      Skill.circleci,
+      // language
       Skill.nodejs,
       Skill.typescript,
+      // framework/library
+      Skill.react,
+      Skill.nextjs,
+      // cloud
+      Skill.aws,
+      Skill.vercel,
+      // ci/cd
+      Skill.circleci,
+      // other
       Skill.docker,
       Skill.serverless,
       Skill.terraform,
       Skill.webpack,
       Skill.materialui,
-      Skill.vercel,
-      Skill.nextjs,
     ],
   },
   lgtmGenerator: {
@@ -46,19 +55,25 @@ export const Portfolio = {
     url: 'https://lgtm-generator.kou-pg.com',
     githubUrl: 'https://github.com/kou-pg-0131/lgtm-generator-ui',
     skills: [
-      Skill.react,
-      Skill.gcp,
-      Skill.aws,
-      Skill.circleci,
+      // language
       Skill.nodejs,
       Skill.typescript,
+      Skill.go,
+      // framework/library
+      Skill.react,
+      Skill.nextjs,
+      Skill.gin,
+      // cloud
+      Skill.vercel,
+      Skill.gcp,
+      Skill.aws,
+      // ci/cd
+      Skill.circleci,
+      // other
       Skill.docker,
       Skill.serverless,
       Skill.terraform,
       Skill.materialui,
-      Skill.go,
-      Skill.nextjs,
-      Skill.gin,
     ],
   },
   qiitaLgtmRanking: {
@@ -68,9 +83,14 @@ export const Portfolio = {
     url: null,
     githubUrl: 'https://github.com/kou-pg-0131/qiita-lgtm-ranking',
     skills: [
+      // language
       Skill.go,
+      // framework/library
+      // cloud
       Skill.aws,
+      // ci/cd
       Skill.circleci,
+      // other
       Skill.docker,
       Skill.serverless,
     ],
