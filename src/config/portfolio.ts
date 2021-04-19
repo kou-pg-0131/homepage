@@ -1,12 +1,12 @@
 import { Skill } from './skill';
 
 export const Portfolio = {
-  homepage: {
+  portfolio: {
     title: 'Koki Sato',
     description: 'このサイト。',
-    imgSrc: '/images/portfolios/homepage.png',
+    imgSrc: '/images/portfolios/portfolio.png',
     url: 'https://kou-pg.com',
-    githubUrl: 'https://github.com/kou-pg-0131/homepage',
+    githubUrl: 'https://github.com/kou-pg-0131/portfolio',
     skills: [
       Skill.circleci,
       Skill.nodejs,
@@ -144,7 +144,7 @@ export const PortfolioGroup = {
   webService: {
     name: 'Web Service',
     portfolios: [
-      Portfolio.homepage,
+      Portfolio.portfolio,
       Portfolio.nojov,
       Portfolio.lgtmGenerator,
     ],

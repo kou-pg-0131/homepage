@@ -29,7 +29,7 @@ export const Footer: React.VFC = () => {
       </small>
       <ul>
         <li className={classes.listItem}>
-          <ExternalLink href='https://github.com/kou-pg-0131/homepage'>View on GitHub</ExternalLink>
+          <ExternalLink href='https://github.com/kou-pg-0131/portfolio'>View on GitHub</ExternalLink>
         </li>
         <li className={classes.listItem}>
           <Link href='/privacyPolicy'>
