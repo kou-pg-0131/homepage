@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(2),
     },
     description: {
+      fontSize: 14,
       marginBottom: theme.spacing(1),
     },
     img: {
