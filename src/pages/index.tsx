@@ -1,22 +1,10 @@
 import React from 'react';
 import { Layout } from '../layout';
-import { SocialList, PortfolioCardList, PortfolioCardListItem, Section, SkillCardList, HistoryList, HistoryListItem, User } from '../components';
+import { SocialList, PortfolioCardList, Section, SkillCardList, HistoryList, HistoryListItem, User } from '../components';
 import { Divider } from '@material-ui/core';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import config from '../config';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    category: {
-      fontSize: 16,
-      textAlign: 'center',
-    },
-  }),
-);
-
 const Home: React.VFC = () => {
-  const classes = useStyles();
-
   return (
     <Layout>
       <Section>
