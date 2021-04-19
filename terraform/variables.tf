@@ -1,6 +1,6 @@
 variable "vercel_domain_ip" {}
 
 locals {
-  prefix = "kou-homepage"
+  prefix = "kou-portfolio"
   domain = "kou-pg.com"
 }
