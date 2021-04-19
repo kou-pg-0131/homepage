@@ -1,20 +1,20 @@
-import { Social as SocialType, SkillGroup as SkillGroupType, PortfolioGroup as PortfolioGroupType, History as HistoryType } from '../domain';
+import { Social as SocialType, SkillGroup as SkillGroupType, History as HistoryType } from '../domain';
 import { Social } from './social';
 import { SkillGroup } from './skill';
-import { PortfolioGroup } from './portfolio';
 import { History } from './history';
+import { Portfolio } from './portfolio';
 
 type Config = {
   socials: Readonly<SocialType[]>;
   skillGroups: Readonly<SkillGroupType[]>;
-  portfolioGroups: Readonly<PortfolioGroupType[]>;
+  portfolios: Readonly<Portfolio[]>;
   histories: Readonly<HistoryType[]>;
 };
 
 const config: Config = {
   socials: Object.values(Social),
   skillGroups: Object.values(SkillGroup),
-  portfolioGroups: Object.values(PortfolioGroup),
+  portfolios: Object.values(Portfolio),
   histories: Object.values(History),
 };
 

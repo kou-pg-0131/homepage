@@ -23,9 +23,7 @@ const Home: React.VFC = () => {
       <Divider id='portfolios'/>
 
       <Section title='Portfolios'>
-        {config.portfolioGroups.map(group => (
-          <PortfolioCardList key={group.name} name={group.name} portfolios={group.portfolios}/>
-        ))}
+        <PortfolioCardList portfolios={config.portfolios}/>
       </Section>
 
       <Divider id='history'/>

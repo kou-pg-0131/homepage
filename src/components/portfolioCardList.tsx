@@ -10,12 +10,6 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       marginBottom: theme.spacing(2),
     },
-    groupName: {
-      fontSize: 16,
-      fontWeight: 'bold',
-      marginBottom: theme.spacing(1),
-      textAlign: 'center',
-    },
     description: {
       marginBottom: theme.spacing(1),
     },
@@ -57,7 +51,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 type Props = {
-  name: string;
   portfolios: Readonly<Portfolio[]>;
 };
 
@@ -65,41 +58,38 @@ export const PortfolioCardList: React.VFC<Props> = (props: Props) => {
   const classes = useStyles();
 
   return (
-    <>
-      <Typography className={classes.groupName}>{props.name}</Typography>
-      <Grid container className={classes.container} spacing={4}>
-        {props.portfolios.map(portfolio => (
-          <Grid key={portfolio.title} item xs={12}>
-            <Card raised>
-              {portfolio.imgSrc && portfolio.url && (
-                <CardActionArea>
-                  <ExternalLink href={portfolio.url}>
-                    <CardMedia
-                      className={classes.img}
-                      image={portfolio.imgSrc}
-                    />
-                  </ExternalLink>
-                </CardActionArea>
-              )}
-
-              <CardContent className={classes.cardContent}>
-                <Typography className={classes.title}>{portfolio.title}</Typography>
-                <AvatarGroup className={classes.avatarGroup} max={100}>
-                  {portfolio.skills.concat().sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
-                    <ExternalLink key={skill.name} className={classes.avatarLink} href={skill.href}>
-                      <Avatar className={classes.avatar} imgProps={{ className: classes.avatarImg }} src={skill.imgSrc} alt={skill.name}/>
-                    </ExternalLink>
-                  ))}
-                </AvatarGroup>
-                <Typography className={classes.description}>{portfolio.description}</Typography>
-                <ExternalLink href={portfolio.githubUrl}>
-                  View on GitHub
+    <Grid container className={classes.container} spacing={4}>
+      {props.portfolios.map(portfolio => (
+        <Grid key={portfolio.title} item xs={12}>
+          <Card raised>
+            {portfolio.imgSrc && portfolio.url && (
+              <CardActionArea>
+                <ExternalLink href={portfolio.url}>
+                  <CardMedia
+                    className={classes.img}
+                    image={portfolio.imgSrc}
+                  />
                 </ExternalLink>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </>
+              </CardActionArea>
+            )}
+
+            <CardContent className={classes.cardContent}>
+              <Typography className={classes.title}>{portfolio.title}</Typography>
+              <AvatarGroup className={classes.avatarGroup} max={100}>
+                {portfolio.skills.concat().sort((a, b) => a.name < b.name ? -1 : 1).map(skill => (
+                  <ExternalLink key={skill.name} className={classes.avatarLink} href={skill.href}>
+                    <Avatar className={classes.avatar} imgProps={{ className: classes.avatarImg }} src={skill.imgSrc} alt={skill.name}/>
+                  </ExternalLink>
+                ))}
+              </AvatarGroup>
+              <Typography className={classes.description}>{portfolio.description}</Typography>
+              <ExternalLink href={portfolio.githubUrl}>
+                View on GitHub
+              </ExternalLink>
+            </CardContent>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
 };
