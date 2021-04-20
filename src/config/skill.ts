@@ -24,9 +24,9 @@ export const Skill = {
     imgSrc: '/images/skills/javascript.svg',
     href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
-  vbdotnet: {
-    name: 'VB.NET',
-    imgSrc: '/images/skills/vb.net.svg',
+  vb: {
+    name: 'VB',
+    imgSrc: '/images/skills/vb.svg',
     href: 'https://docs.microsoft.com/ja-jp/dotnet/visual-basic/',
   },
   html: {
@@ -192,7 +192,7 @@ export const SkillGroup = {
       Skill.nodejs,
       Skill.typescript,
       Skill.javascript,
-      Skill.vbdotnet,
+      Skill.vb,
       Skill.html,
       Skill.css,
       Skill.sass,
