@@ -4,6 +4,11 @@ export const Skill = {
     imgSrc: '/images/skills/go.svg',
     href: 'https://golang.org/',
   },
+  python: {
+    name: 'Python',
+    imgSrc: '/images/skills/python.svg',
+    href: 'https://www.python.org/',
+  },
   ruby: {
     name: 'Ruby',
     imgSrc: '/images/skills/ruby.svg',
@@ -188,6 +193,7 @@ export const SkillGroup = {
     name: 'Language',
     skills: [
       Skill.go,
+      Skill.python,
       Skill.ruby,
       Skill.nodejs,
       Skill.typescript,
