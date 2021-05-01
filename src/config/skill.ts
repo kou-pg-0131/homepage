@@ -114,6 +114,11 @@ export const Skill = {
     imgSrc: '/images/skills/vercel.svg',
     href: 'https://vercel.com',
   },
+  heroku: {
+    name: 'Heroku',
+    imgSrc: '/images/skills/heroku.svg',
+    href: 'https://www.heroku.com/',
+  },
   circleci: {
     name: 'CircleCI',
     imgSrc: '/images/skills/circleci.svg',
@@ -241,6 +246,7 @@ export const SkillGroup = {
       Skill.aws,
       Skill.gcp,
       Skill.vercel,
+      Skill.heroku,
     ],
   },
   cicd: {
