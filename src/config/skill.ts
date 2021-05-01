@@ -94,6 +94,11 @@ export const Skill = {
     imgSrc: '/images/skills/postgresql.svg',
     href: 'https://www.postgresql.org/',
   },
+  sqlite: {
+    name: 'SQLite',
+    imgSrc: '/images/skills/sqlite.svg',
+    href: 'http://www.sqlite.org/',
+  },
   redis: {
     name: 'Redis',
     imgSrc: '/images/skills/redis.svg',
@@ -237,6 +242,7 @@ export const SkillGroup = {
     skills: [
       Skill.mysql,
       Skill.postgresql,
+      Skill.sqlite,
       Skill.redis,
     ],
   },
