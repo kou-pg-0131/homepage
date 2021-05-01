@@ -74,11 +74,6 @@ export const Skill = {
     imgSrc: '/images/skills/jekyll.svg',
     href: 'https://jekyllrb.com/',
   },
-  dotnet: {
-    name: '.NET',
-    imgSrc: '/images/skills/dotnet.svg',
-    href: 'https://dotnet.microsoft.com/',
-  },
   mysql: {
     name: 'MySQL',
     imgSrc: '/images/skills/mysql.svg',
@@ -227,7 +222,6 @@ export const SkillGroup = {
       Skill.react,
       Skill.nextjs,
       Skill.jekyll,
-      Skill.dotnet,
       Skill.jquery,
     ],
   },
