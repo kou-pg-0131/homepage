@@ -24,26 +24,26 @@ export const Skill = {
     imgSrc: '/images/skills/typescript.svg',
     href: 'https://www.typescriptlang.org/',
   },
-  javascript: {
-    name: 'JavaScript',
-    imgSrc: '/images/skills/javascript.svg',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  },
-  html: {
-    name: 'HTML',
-    imgSrc: '/images/skills/html.svg',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  },
-  css: {
-    name: 'CSS',
-    imgSrc: '/images/skills/css.svg',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-  },
-  sass: {
-    name: 'Sass',
-    imgSrc: '/images/skills/sass.svg',
-    href: 'https://sass-lang.com/',
-  },
+  // javascript: {
+  //   name: 'JavaScript',
+  //   imgSrc: '/images/skills/javascript.svg',
+  //   href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  // },
+  // html: {
+  //   name: 'HTML',
+  //   imgSrc: '/images/skills/html.svg',
+  //   href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  // },
+  // css: {
+  //   name: 'CSS',
+  //   imgSrc: '/images/skills/css.svg',
+  //   href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  // },
+  // sass: {
+  //   name: 'Sass',
+  //   imgSrc: '/images/skills/sass.svg',
+  //   href: 'https://sass-lang.com/',
+  // },
   gin: {
     name: 'Gin',
     imgSrc: '/images/skills/gin.svg',
@@ -74,11 +74,11 @@ export const Skill = {
     imgSrc: '/images/skills/nextjs.svg',
     href: 'https://nextjs.org/',
   },
-  jekyll: {
-    name: 'Jekyll',
-    imgSrc: '/images/skills/jekyll.svg',
-    href: 'https://jekyllrb.com/',
-  },
+  // jekyll: {
+  //   name: 'Jekyll',
+  //   imgSrc: '/images/skills/jekyll.svg',
+  //   href: 'https://jekyllrb.com/',
+  // },
   mysql: {
     name: 'MySQL',
     imgSrc: '/images/skills/mysql.svg',
@@ -129,16 +129,16 @@ export const Skill = {
     imgSrc: '/images/skills/travis-ci.svg',
     href: 'https://www.travis-ci.com/',
   },
-  githubactions: {
-    name: 'GitHub Actions',
-    imgSrc: '/images/skills/githubactions.png',
-    href: 'https://github.com/features/actions',
-  },
-  jenkins: {
-    name: 'Jenkins',
-    imgSrc: '/images/skills/jenkins.svg',
-    href: 'https://www.jenkins.io/',
-  },
+  // githubactions: {
+  //   name: 'GitHub Actions',
+  //   imgSrc: '/images/skills/githubactions.png',
+  //   href: 'https://github.com/features/actions',
+  // },
+  // jenkins: {
+  //   name: 'Jenkins',
+  //   imgSrc: '/images/skills/jenkins.svg',
+  //   href: 'https://www.jenkins.io/',
+  // },
   docker: {
     name: 'Docker',
     imgSrc: '/images/skills/docker.svg',
@@ -149,11 +149,11 @@ export const Skill = {
     imgSrc: '/images/skills/serverless.svg',
     href: 'https://www.serverless.com/',
   },
-  ansible: {
-    name: 'Ansible',
-    imgSrc: '/images/skills/ansible.svg',
-    href: 'https://www.ansible.com/',
-  },
+  // ansible: {
+  //   name: 'Ansible',
+  //   imgSrc: '/images/skills/ansible.svg',
+  //   href: 'https://www.ansible.com/',
+  // },
   terraform: {
     name: 'Terraform',
     imgSrc: '/images/skills/terraform.svg',
@@ -174,11 +174,11 @@ export const Skill = {
     imgSrc: '/images/skills/swagger.svg',
     href: 'https://swagger.io/',
   },
-  packer: {
-    name: 'Packer',
-    imgSrc: '/images/skills/packer.svg',
-    href: 'https://www.packer.io/',
-  },
+  // packer: {
+  //   name: 'Packer',
+  //   imgSrc: '/images/skills/packer.svg',
+  //   href: 'https://www.packer.io/',
+  // },
   materialui: {
     name: 'Material-UI',
     imgSrc: '/images/skills/material-ui.svg',
@@ -189,11 +189,11 @@ export const Skill = {
     imgSrc: '/images/skills/bootstrap.svg',
     href: 'https://getbootstrap.com/',
   },
-  jquery: {
-    name: 'jQuery',
-    imgSrc: '/images/skills/jquery.svg',
-    href: 'https://jquery.com/',
-  },
+  // jquery: {
+  //   name: 'jQuery',
+  //   imgSrc: '/images/skills/jquery.svg',
+  //   href: 'https://jquery.com/',
+  // },
   semanticui: {
     name: 'Semantic UI',
     imgSrc: '/images/skills/semantic-ui.svg',
@@ -212,10 +212,10 @@ export const SkillGroup = {
       Skill.ruby,
       Skill.nodejs,
       Skill.typescript,
-      Skill.javascript,
-      Skill.html,
-      Skill.css,
-      Skill.sass,
+      // Skill.javascript,
+      // Skill.html,
+      // Skill.css,
+      // Skill.sass,
     ],
   },
   frameworkOrLibary: {
@@ -227,8 +227,8 @@ export const SkillGroup = {
       Skill.django,
       Skill.react,
       Skill.nextjs,
-      Skill.jekyll,
-      Skill.jquery,
+      // Skill.jekyll,
+      // Skill.jquery,
     ],
   },
   rdbOrNoSql: {
@@ -254,8 +254,8 @@ export const SkillGroup = {
     skills: [
       Skill.circleci,
       Skill.travisci,
-      Skill.githubactions,
-      Skill.jenkins,
+      // Skill.githubactions,
+      // Skill.jenkins,
     ],
   },
   other: {
@@ -263,12 +263,12 @@ export const SkillGroup = {
     skills: [
       Skill.docker,
       Skill.serverless,
-      Skill.ansible,
+      // Skill.ansible,
       Skill.terraform,
       Skill.webpack,
       Skill.gulp,
       Skill.swagger,
-      Skill.packer,
+      // Skill.packer,
       Skill.materialui,
       Skill.bootstrap,
       Skill.semanticui,
