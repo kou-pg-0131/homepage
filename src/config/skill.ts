@@ -49,6 +49,11 @@ export const Skill = {
     imgSrc: '/images/skills/gin.svg',
     href: 'https://gin-gonic.com/',
   },
+  flask: {
+    name: 'Flask',
+    imgSrc: '/images/skills/flask.svg',
+    href: 'https://flask.palletsprojects.com/',
+  },
   django: {
     name: 'Django',
     imgSrc: '/images/skills/django.svg',
@@ -218,6 +223,7 @@ export const SkillGroup = {
     skills: [
       Skill.gin,
       Skill.rails,
+      Skill.flask,
       Skill.django,
       Skill.react,
       Skill.nextjs,
